@@ -1,0 +1,12 @@
+[
+  {
+    "pageKey": "Home",
+    "title": "Home Page",
+    "url": "/"
+  },
+  {
+    "pageKey": "WordDetail",
+    "title": "Word Detail",
+    "url": "/word/:word"
+  }
+]

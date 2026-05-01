@@ -1,0 +1,8 @@
+[2026-05-01 13:13:44] [INFO] ==== setup-project.js =====
+[2026-05-01 13:13:44] [DEBUG] [PPT Setup] stdin 数据: {"session_id":"2050201937601269760","transcript_path":"/root/.codebuddy/projects/workspace/2050201937601269760.jsonl","cwd":"/workspace","hook_event_name":"PreToolUse","tool_name":"Skill","tool_input":{"skill":"web-implement","args":"--app-name vocab-learn --app-slug vocab-learn --init-only"},"call_id":"Skill:0","tool_use_id":"Skill:0","permission_mode":"dontAsk","client":"CLI","version":"2.94.0","generation_id":"c821cdf1460a48d29d5dbc9ac202efd3","model":"kimi-k2.5"}
+[2026-05-01 13:13:44] [INFO] [PPT Setup] skill: web-implement
+[2026-05-01 13:13:44] [INFO] [PPT Setup] 跳过: skill 是 "web-implement"，不是 "ppt-implement"
+[2026-05-01 13:39:41] [INFO] ==== setup-project.js =====
+[2026-05-01 13:39:41] [DEBUG] [PPT Setup] stdin 数据: {"session_id":"2050201937601269760","transcript_path":"/root/.codebuddy/projects/workspace/2050201937601269760.jsonl","cwd":"/workspace","hook_event_name":"PreToolUse","tool_name":"Skill","tool_input":{"skill":"preview","args":"deploy"},"call_id":"Skill:30","tool_use_id":"Skill:30","permission_mode":"dontAsk","client":"CLI","version":"2.94.0","generation_id":"c3328d798801419a98f096e618f8de97","model":"kimi-k2.5"}
+[2026-05-01 13:39:41] [INFO] [PPT Setup] skill: preview
+[2026-05-01 13:39:41] [INFO] [PPT Setup] 跳过: skill 是 "preview"，不是 "ppt-implement"

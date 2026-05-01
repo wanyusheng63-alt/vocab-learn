@@ -1,0 +1,8 @@
+{
+  "project_type": "web",
+  "sub_project_type": "",
+  "name": "VocabLearn 单词学习",
+  "app_slug": "vocab-learn",
+  "version_description": "Deploy to Cloudflare for public sharing",
+  "preview_type": "pc"
+}

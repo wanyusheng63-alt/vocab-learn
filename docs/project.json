@@ -1,8 +1,8 @@
 {
   "project_type": "web",
   "sub_project_type": "",
-  "name": "VocabLearn 单词学习",
+  "name": "VocabLearn",
   "app_slug": "vocab-learn",
-  "version_description": "Deploy to Cloudflare for public sharing",
+  "version_description": "Deploy all 431 words with public preview URL",
   "preview_type": "pc"
 }

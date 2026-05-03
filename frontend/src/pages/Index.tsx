@@ -3,15 +3,15 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Search, BookOpen, Sparkles } from "lucide-react";
 import { Input } from "@/components/ui/input";
-import { wordsData } from "@/data/words";
+import { allWordsData } from "@/data/allWords";
 
 export default function Index() {
   const [searchTerm, setSearchTerm] = useState("");
 
   const filteredWords = useMemo(() => {
-    if (!searchTerm.trim()) return wordsData;
+    if (!searchTerm.trim()) return allWordsData;
     const term = searchTerm.toLowerCase();
-    return wordsData.filter(
+    return allWordsData.filter(
       (word) =>
         word.word.toLowerCase().includes(term) ||
         word.summary.toLowerCase().includes(term)
@@ -52,7 +52,7 @@ export default function Index() {
           >
             <div className="text-center">
               <div className="text-2xl font-semibold text-primary">
-                {wordsData.length}
+                {allWordsData.length}
               </div>
               <div className="text-sm text-muted-foreground">单词总数</div>
             </div>

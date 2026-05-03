@@ -1,0 +1,323 @@
+import type { WordAnalysis } from "@/types/word";
+
+export const batch2c: WordAnalysis[] = [
+  {
+    word: "coauthor",
+    phonetic: { uk: "/kəʊˈɔːθə(r)/", us: "/koʊˈɔːθər/" },
+    root: { components: [{ part: "co-", meaning: "共同", origin: "" }, { part: "author", meaning: "作者", origin: "拉丁语 auctor" }], explanation: "coauthor = 共同作者 → 合著" },
+    logic: { premise: "一部作品由多人共同完成", feature: "两人或多人共同署名", result: "成为合著者", essence: "共同创作，合著" },
+    usage: [{ context: "合著", example: "coauthor a paper", explanation: "合著一篇论文" }, { context: "合著者", example: "the coauthor of the book", explanation: "这本书的合著者" }],
+    distinction: [{ word: "collaborator", essence: "合作者（更广泛）" }, { word: "contributor", essence: "贡献者" }, { word: "coauthor", essence: "合著者（特指写作）" }],
+    memory: { methods: ["co + author = 共同作者 → 合著", "联想：cooperate 合作"], visualHint: "两个人一起在电脑前写论文" },
+    pitfalls: ["coauthor 可作名词和动词", "coauthor 不同于 contributor（贡献者）"],
+    summary: "coauthor = 合著，合著者"
+  },
+  {
+    word: "predator",
+    phonetic: { uk: "/ˈpredətə(r)/", us: "/ˈpredətər/" },
+    root: { components: [{ part: "predat", meaning: "掠夺", origin: "拉丁语 praedari（掠夺）" }, { part: "-or", meaning: "做...的人", origin: "" }], explanation: "predator = 掠夺者 → 捕食者，掠夺者" },
+    logic: { premise: "生态系统中存在食物链", feature: "某些动物靠捕食其他动物为生", result: "形成捕食关系", essence: "捕食其他生物的动物" },
+    usage: [{ context: "捕食者", example: "apex predator", explanation: "顶级捕食者" }, { context: "掠夺者", example: "sexual predator", explanation: "性掠夺者" }],
+    distinction: [{ word: "hunter", essence: "猎人（可指人）" }, { word: "carnivore", essence: "食肉动物" }, { word: "predator", essence: "捕食者（生态学术语）" }],
+    memory: { methods: ["predat（掠夺）+ or = 掠夺者", "联想：predatory 掠夺性的"], visualHint: "狮子追捕羚羊" },
+    pitfalls: ["predator 与 prey（猎物）相对", "可引申为'掠夺他人的人'"],
+    summary: "predator = 捕食者，掠夺者"
+  },
+  {
+    word: "feather",
+    phonetic: { uk: "/ˈfeðə(r)/", us: "/ˈfeðər/" },
+    root: { components: [{ part: "feather", meaning: "羽毛", origin: "古英语 fether" }], explanation: "feather = 鸟类的羽毛 → 羽毛" },
+    logic: { premise: "鸟类体表覆盖着轻质结构", feature: "提供飞行和保暖功能", result: "成为鸟类的标志性特征", essence: "鸟类的羽毛" },
+    usage: [{ context: "羽毛", example: "a peacock feather", explanation: "孔雀羽毛" }, { context: "轻如羽毛", example: "as light as a feather", explanation: "轻如鸿毛" }],
+    distinction: [{ word: "fur", essence: "毛皮（哺乳动物）" }, { word: "plumage", essence: "全身羽毛（文学用语）" }, { word: "feather", essence: "单根羽毛" }],
+    memory: { methods: ["feather 听起来像'飞着'→ 飞翔用的羽毛", "as light as a feather = 轻如鸿毛"], visualHint: "一根飘落的白色羽毛" },
+    pitfalls: ["feather 可引申为'种类'", "birds of a feather = 同类人"],
+    summary: "feather = 羽毛"
+  },
+  {
+    word: "noiseless",
+    phonetic: { uk: "/ˈnɔɪzləs/", us: "/ˈnɔɪzləs/" },
+    root: { components: [{ part: "noise", meaning: "噪音", origin: "" }, { part: "-less", meaning: "无", origin: "" }], explanation: "noiseless = 无噪音的 → 无声的，寂静的" },
+    logic: { premise: "环境或动作不产生声响", feature: "完全没有噪音", result: "极其安静", essence: "完全无声的" },
+    usage: [{ context: "无声的", example: "noiseless footsteps", explanation: "无声的脚步" }, { context: "静音的", example: "a noiseless typewriter", explanation: "静音打字机" }],
+    distinction: [{ word: "silent", essence: "沉默的" }, { word: "quiet", essence: "安静的（可能有小声）" }, { word: "noiseless", essence: "无声的（完全没有噪音）" }],
+    memory: { methods: ["noise + less = 无噪音的", "联想：careless 粗心的，homeless 无家的"], visualHint: "猫的脚掌走路悄无声息" },
+    pitfalls: ["noiseless 比 silent 更强调'无噪音'", "noiseless 偏文学化表达"],
+    summary: "noiseless = 无声的，寂静的"
+  },
+  {
+    word: "desperately",
+    phonetic: { uk: "/ˈdespərətli/", us: "/ˈdespərətli/" },
+    root: { components: [{ part: "de-", meaning: "向下", origin: "" }, { part: "sper", meaning: "希望", origin: "拉丁语 sperare" }, { part: "-ately", meaning: "副词后缀", origin: "" }], explanation: "desperately = 失去希望地 → 绝望地，拼命地" },
+    logic: { premise: "处于极端困难的境地", feature: "失去希望但仍拼命挣扎", result: "不顾一切地行动", essence: "绝望地，不顾一切地" },
+    usage: [{ context: "拼命地", example: "desperately need help", explanation: "急需帮助" }, { context: "绝望地", example: "desperately looking for a way out", explanation: "绝望地寻找出路" }],
+    distinction: [{ word: "urgently", essence: "紧急地" }, { word: "frantically", essence: "疯狂地" }, { word: "desperately", essence: "拼命地（带有绝望感）" }],
+    memory: { methods: ["de + sper（希望）+ ately = 没有希望地 → 绝望地", "联想：despair 绝望"], visualHint: "落水的人拼命伸手呼救" },
+    pitfalls: ["desperately 可表示'极度'（非绝望）", "desperately important = 极其重要"],
+    summary: "desperately = 绝望地，拼命地"
+  },
+  {
+    word: "vocalization",
+    phonetic: { uk: "/ˌvəʊkəlaɪˈzeɪʃn/", us: "/ˌvoʊkələˈzeɪʃn/" },
+    root: { components: [{ part: "voc", meaning: "声音", origin: "拉丁语 vox/vocis" }, { part: "-al", meaning: "形容词后缀", origin: "" }, { part: "-ization", meaning: "名词后缀", origin: "" }], explanation: "vocalization = 发出声音的行为 → 发声，发声法" },
+    logic: { premise: "人或动物需要发出声音", feature: "通过声带产生声音表达", result: "形成语言或叫声", essence: "发声的行为或结果" },
+    usage: [{ context: "发声", example: "bird vocalization", explanation: "鸟类发声" }, { context: "发音", example: "vocalization exercises", explanation: "发音练习" }],
+    distinction: [{ word: "pronunciation", essence: "发音（语言）" }, { word: "sound", essence: "声音" }, { word: "vocalization", essence: "发声（学术用语，含动物发声）" }],
+    memory: { methods: ["vocal（声音的）+ ization = 发声", "联想：vocal 声音的，vocabulary 词汇"], visualHint: "歌手在练声" },
+    pitfalls: ["vocalization 是学术用语", "可用于动物和人类的发声"],
+    summary: "vocalization = 发声，发声法"
+  },
+  {
+    word: "diminish",
+    phonetic: { uk: "/dɪˈmɪnɪʃ/", us: "/dɪˈmɪnɪʃ/" },
+    root: { components: [{ part: "di-", meaning: "分开", origin: "" }, { part: "min", meaning: "小", origin: "拉丁语 minuere" }, { part: "-ish", meaning: "动词后缀", origin: "" }], explanation: "diminish = 使变小 → 减少，减弱" },
+    logic: { premise: "某事物的量或重要性较大", feature: "逐渐变小或变弱", result: "影响力或数量下降", essence: "逐渐减少或减弱" },
+    usage: [{ context: "减少", example: "diminish the risk", explanation: "降低风险" }, { context: "减弱", example: "his influence diminished", explanation: "他的影响力减弱了" }],
+    distinction: [{ word: "decrease", essence: "减少（中性描述）" }, { word: "reduce", essence: "减少（人为）" }, { word: "diminish", essence: "减少/减弱（强调逐渐性）" }],
+    memory: { methods: ["di + min（小）+ ish = 使变小 → 减少", "联想：minimum 最小值"], visualHint: "山丘逐渐降低到平原" },
+    pitfalls: ["diminish 强调'逐渐减少'", "diminishing returns = 边际收益递减"],
+    summary: "diminish = 减少，减弱"
+  },
+  {
+    word: "unbearable",
+    phonetic: { uk: "/ʌnˈbeərəbl/", us: "/ʌnˈberəbl/" },
+    root: { components: [{ part: "un-", meaning: "不", origin: "" }, { part: "bear", meaning: "承受", origin: "" }, { part: "-able", meaning: "可...的", origin: "" }], explanation: "unbearable = 不可承受的 → 难以忍受的" },
+    logic: { premise: "某种痛苦或压力极大", feature: "超过了人的承受能力", result: "无法忍受", essence: "超出承受极限的" },
+    usage: [{ context: "难以忍受的", example: "unbearable pain", explanation: "难以忍受的疼痛" }, { context: "不堪的", example: "unbearable heat", explanation: "难以忍受的酷热" }],
+    distinction: [{ word: "intolerable", essence: "不可容忍的" }, { word: "insufferable", essence: "令人受不了的" }, { word: "unbearable", essence: "无法忍受的（强调主观感受）" }],
+    memory: { methods: ["un + bear（承受）+ able = 不可承受的", "联想：bear 忍受，unbearable 无法忍受"], visualHint: "烈日下的人快要昏倒" },
+    pitfalls: ["unbearable 强调主观感受", "unbearably = 难以忍受地"],
+    summary: "unbearable = 难以忍受的"
+  },
+  {
+    word: "albeit",
+    phonetic: { uk: "/ˌɔːlˈbiːɪt/", us: "/ˌɔːlˈbiːɪt/" },
+    root: { components: [{ part: "all", meaning: "虽然", origin: "" }, { part: "be", meaning: "是", origin: "" }, { part: "it", meaning: "它", origin: "" }], explanation: "albeit = 虽然它是 → 尽管，虽然" },
+    logic: { premise: "前文提出一个事实", feature: "后文出现一个让步条件", result: "形成'尽管...但是'的转折", essence: "尽管，虽然（让步连词）" },
+    usage: [{ context: "尽管", example: "He accepted, albeit reluctantly.", explanation: "他接受了，尽管不太情愿" }],
+    distinction: [{ word: "although", essence: "虽然（通用）" }, { word: "even though", essence: "即使" }, { word: "albeit", essence: "尽管（正式用语，后接短语非从句）" }],
+    memory: { methods: ["all + be + it = 虽然它是 → 尽管", "albeit 比 although 更正式简洁"], visualHint: "一个人接受了奖杯但面露犹豫" },
+    pitfalls: ["albeit 后面接短语，不接从句", "albeit 是正式用语，口语中少用"],
+    summary: "albeit = 尽管，虽然"
+  },
+  {
+    word: "scale",
+    phonetic: { uk: "/skeɪl/", us: "/skeɪl/" },
+    root: { components: [{ part: "scale", meaning: "鳞片，刻度，规模", origin: "拉丁语 scala（梯子）" }], explanation: "scale = 梯子的级 → 刻度，规模，比例" },
+    logic: { premise: "需要衡量事物的大小或程度", feature: "通过分级或刻度来量化", result: "形成衡量体系", essence: "规模，刻度，比例" },
+    usage: [{ context: "规模", example: "on a large scale", explanation: "大规模地" }, { context: "比例", example: "scale model", explanation: "比例模型" }, { context: "刻度", example: "the Richter scale", explanation: "里氏震级" }],
+    distinction: [{ word: "size", essence: "大小" }, { word: "scope", essence: "范围" }, { word: "scale", essence: "规模/比例（可量化体系）" }],
+    memory: { methods: ["scale 多义：规模/刻度/比例/鳞片", "on a large/small scale = 大/小规模"], visualHint: "地图上的比例尺" },
+    pitfalls: ["scale 有多个含义，需根据语境判断", "scale up = 扩大规模"],
+    summary: "scale = 规模，刻度，比例"
+  },
+  {
+    word: "authenticity",
+    phonetic: { uk: "/ˌɔːθenˈtɪsəti/", us: "/ˌɔːθenˈtɪsəti/" },
+    root: { components: [{ part: "authent", meaning: "原始的，真实的", origin: "希腊语 authentikos" }, { part: "-icity", meaning: "名词后缀", origin: "" }], explanation: "authenticity = 真实的性质 → 真实性，正宗" },
+    logic: { premise: "某物声称是真的", feature: "经过验证确认其来源", result: "被认定为真实的", essence: "真实性和可靠性" },
+    usage: [{ context: "真实性", example: "verify the authenticity", explanation: "验证真实性" }, { context: "正宗", example: "the authenticity of the recipe", explanation: "食谱的正宗性" }],
+    distinction: [{ word: "genuineness", essence: "真诚" }, { word: "reliability", essence: "可靠性" }, { word: "authenticity", essence: "真实性（强调确系原物）" }],
+    memory: { methods: ["authentic（真实的）+ ity = 真实性", "联想：authenticate 认证"], visualHint: "鉴定专家用放大镜检查古画真伪" },
+    pitfalls: ["authenticity 强调'非伪造的'", "certificate of authenticity = 真品证书"],
+    summary: "authenticity = 真实性，正宗"
+  },
+  {
+    word: "spectacles",
+    phonetic: { uk: "/ˈspektəklz/", us: "/ˈspektəklz/" },
+    root: { components: [{ part: "spect", meaning: "看", origin: "拉丁语 specere" }, { part: "-acle", meaning: "名词后缀", origin: "" }, { part: "-s", meaning: "复数", origin: "" }], explanation: "spectacles = 用来看的东西 → 眼镜" },
+    logic: { premise: "视力需要矫正", feature: "戴上辅助视力的器具", result: "看清事物", essence: "矫正视力的眼镜" },
+    usage: [{ context: "眼镜", example: "a pair of spectacles", explanation: "一副眼镜" }, { context: "奇观", example: "a spectacular spectacle", explanation: "壮观的景象" }],
+    distinction: [{ word: "glasses", essence: "眼镜（日常用语）" }, { word: "lenses", essence: "镜片" }, { word: "spectacles", essence: "眼镜（正式用语）" }],
+    memory: { methods: ["spect（看）+ acles = 用来看的东西 → 眼镜", "联想：spectacular 壮观的"], visualHint: "一副经典圆形眼镜" },
+    pitfalls: ["spectacles 作'眼镜'时必须用复数", "make a spectacle of oneself = 出洋相"],
+    summary: "spectacles = 眼镜，奇观"
+  },
+  {
+    word: "commemorate",
+    phonetic: { uk: "/kəˈmeməreɪt/", us: "/kəˈmeməreɪt/" },
+    root: { components: [{ part: "com-", meaning: "共同", origin: "" }, { part: "memor", meaning: "记忆", origin: "拉丁语 memorare" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "commemorate = 共同记忆 → 纪念" },
+    logic: { premise: "某个重要事件或人物值得铭记", feature: "通过仪式或标志来提醒后人", result: "使记忆得以延续", essence: "正式地纪念" },
+    usage: [{ context: "纪念", example: "commemorate the anniversary", explanation: "纪念周年" }, { context: "缅怀", example: "a ceremony to commemorate the victims", explanation: "缅怀遇难者的仪式" }],
+    distinction: [{ word: "remember", essence: "记得（日常）" }, { word: "memorialize", essence: "立碑纪念" }, { word: "commemorate", essence: "纪念（正式，带有仪式感）" }],
+    memory: { methods: ["com + memor（记忆）+ ate = 共同记忆 → 纪念", "联想：memory 记忆，memorial 纪念碑"], visualHint: "人们在纪念碑前献花" },
+    pitfalls: ["commemorate 强调'正式纪念'", "commemorative stamp = 纪念邮票"],
+    summary: "commemorate = 纪念，缅怀"
+  },
+  {
+    word: "fetch",
+    phonetic: { uk: "/fetʃ/", us: "/fetʃ/" },
+    root: { components: [{ part: "fetch", meaning: "去取，拿来", origin: "古英语 feccan" }], explanation: "fetch = 去取回来 → 取来，接来" },
+    logic: { premise: "某物不在手边", feature: "走过去把它取回来", result: "把物品带到面前", essence: "去取并带回" },
+    usage: [{ context: "取来", example: "fetch a doctor", explanation: "去请医生" }, { context: "接来", example: "fetch the kids from school", explanation: "去学校接孩子" }, { context: "卖得", example: "fetch a good price", explanation: "卖个好价钱" }],
+    distinction: [{ word: "bring", essence: "带来" }, { word: "get", essence: "得到" }, { word: "fetch", essence: "去取回（一来一回）" }],
+    memory: { methods: ["fetch 听起来像'飞去'→ 飞去取回来", "联想：play fetch with a dog 和狗玩扔接球"], visualHint: "狗叼回扔出去的球" },
+    pitfalls: ["fetch 包含'去'和'回'两个动作", "fetch a price = 卖得某价格"],
+    summary: "fetch = 取来，接来，卖得"
+  },
+  {
+    word: "delicacy",
+    phonetic: { uk: "/ˈdelɪkəsi/", us: "/ˈdelɪkəsi/" },
+    root: { components: [{ part: "delic", meaning: "精致的，柔软的", origin: "拉丁语 delicates" }, { part: "-acy", meaning: "名词后缀", origin: "" }], explanation: "delicacy = 精致之物 → 美味佳肴，微妙" },
+    logic: { premise: "某些食物制作精细稀有", feature: "口感独特令人珍视", result: "成为珍贵的美味", essence: "精致美味的稀有食物" },
+    usage: [{ context: "美味", example: "a local delicacy", explanation: "当地美味" }, { context: "珍馐", example: "caviar is a delicacy", explanation: "鱼子酱是珍馐" }],
+    distinction: [{ word: "specialty", essence: "特产" }, { word: "treat", essence: "款待" }, { word: "delicacy", essence: "珍馐美味（强调精致稀有）" }],
+    memory: { methods: ["delicate（精致的）+ acy = 精致的东西 → 美味", "联想：delicate 精致的"], visualHint: "摆盘精美的法式料理" },
+    pitfalls: ["delicacy 也有'微妙/审慎'的意思", "handle with delicacy = 谨慎处理"],
+    summary: "delicacy = 珍馐，美味佳肴，微妙"
+  },
+  {
+    word: "string",
+    phonetic: { uk: "/strɪŋ/", us: "/strɪŋ/" },
+    root: { components: [{ part: "string", meaning: "绳子，弦", origin: "古英语 streng" }], explanation: "string = 细绳 → 字符串，弦，一系列" },
+    logic: { premise: "需要将多个东西连接", feature: "用细绳串起来", result: "形成一条线或序列", essence: "细绳，字符串，一系列" },
+    usage: [{ context: "绳子", example: "a piece of string", explanation: "一根绳子" }, { context: "弦", example: "guitar strings", explanation: "吉他弦" }, { context: "字符串", example: "a string of characters", explanation: "字符组成的字符串" }],
+    distinction: [{ word: "rope", essence: "粗绳" }, { word: "thread", essence: "细线" }, { word: "string", essence: "细绳/字符串（中等粗细）" }],
+    memory: { methods: ["string 听起来像'死拧'→ 拧成绳子", "a string of = 一连串的"], visualHint: "吉他上绷紧的琴弦" },
+    pitfalls: ["string 在编程中指'字符串'", "a string of questions = 一连串问题"],
+    summary: "string = 绳子，弦，字符串"
+  },
+  {
+    word: "surpass",
+    phonetic: { uk: "/səˈpɑːs/", us: "/sərˈpæs/" },
+    root: { components: [{ part: "sur-", meaning: "超过", origin: "拉丁语 super" }, { part: "pass", meaning: "通过", origin: "" }], explanation: "surpass = 越过 → 超越，胜过" },
+    logic: { premise: "存在一个已有的标准或水平", feature: "某事物超过了这个标准", result: "达到更高的水平", essence: "超越既有的标准" },
+    usage: [{ context: "超越", example: "surpass expectations", explanation: "超出预期" }, { context: "胜过", example: "surpass all rivals", explanation: "胜过所有对手" }],
+    distinction: [{ word: "exceed", essence: "超过（数量）" }, { word: "outperform", essence: "表现更好" }, { word: "surpass", essence: "超越（程度/质量上的超越）" }],
+    memory: { methods: ["sur（超过）+ pass（通过）= 超越", "联想：surplus 剩余，surface 表面"], visualHint: "跑步者冲过终点线" },
+    pitfalls: ["surpass 强调'质的超越'", "surpass 比 exceed 更正式"],
+    summary: "surpass = 超越，胜过"
+  },
+  {
+    word: "illusion",
+    phonetic: { uk: "/ɪˈluːʒn/", us: "/ɪˈluːʒn/" },
+    root: { components: [{ part: "il-", meaning: "在...上", origin: "" }, { part: "lus", meaning: "玩耍", origin: "拉丁语 ludere" }, { part: "-ion", meaning: "名词后缀", origin: "" }], explanation: "illusion = 在上面玩耍 → 错觉，幻觉" },
+    logic: { premise: "感官被欺骗", feature: "看到的与实际不符", result: "产生虚假的认知", essence: "虚假的感知或幻觉" },
+    usage: [{ context: "错觉", example: "optical illusion", explanation: "视觉错觉" }, { context: "幻觉", example: "under the illusion that...", explanation: "误以为..." }],
+    distinction: [{ word: "delusion", essence: "妄想（心理病态）" }, { word: "mirage", essence: "海市蜃楼" }, { word: "illusion", essence: "错觉/幻觉（感官欺骗）" }],
+    memory: { methods: ["il + lus（玩耍）+ ion = 眼睛被耍了 → 错觉", "联想：delusion 妄想，allusion 暗指"], visualHint: "著名的视觉错觉图（如兔/鸭图）" },
+    pitfalls: ["illusion ≠ delusion（错觉 ≠ 妄想）", "under the illusion that = 误以为"],
+    summary: "illusion = 错觉，幻觉"
+  },
+  {
+    word: "fluctuate",
+    phonetic: { uk: "/ˈflʌktʃueɪt/", us: "/ˈflʌktʃueɪt/" },
+    root: { components: [{ part: "fluctu", meaning: "波浪", origin: "拉丁语 fluctus" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "fluctuate = 像波浪一样 → 波动，起伏" },
+    logic: { premise: "某事物不稳定", feature: "在高低之间来回变化", result: "形成波动趋势", essence: "上下起伏地波动" },
+    usage: [{ context: "波动", example: "prices fluctuate", explanation: "价格波动" }, { context: "起伏", example: "fluctuating temperatures", explanation: "温度起伏不定" }],
+    distinction: [{ word: "vary", essence: "变化（通用）" }, { word: "oscillate", essence: "摆动" }, { word: "fluctuate", essence: "波动（像波浪一样上下起伏）" }],
+    memory: { methods: ["fluctu（波浪）+ ate = 波浪般起伏", "联想：fluid 液体，fluctuation 波动"], visualHint: "股市K线图上下波动" },
+    pitfalls: ["fluctuate 强调'不规则波动'", "fluctuate between A and B = 在A和B之间摇摆"],
+    summary: "fluctuate = 波动，起伏"
+  },
+  {
+    word: "watertight",
+    phonetic: { uk: "/ˈwɔːtətaɪt/", us: "/ˈwɔːtərtaɪt/" },
+    root: { components: [{ part: "water", meaning: "水", origin: "" }, { part: "tight", meaning: "紧密的", origin: "" }], explanation: "watertight = 水都透不过的 → 防水的，无懈可击的" },
+    logic: { premise: "容器需要防止水渗入", feature: "密封得极其紧密", result: "水无法渗透", essence: "密封不透水的" },
+    usage: [{ context: "防水的", example: "a watertight container", explanation: "防水容器" }, { context: "无懈可击的", example: "a watertight argument", explanation: "无懈可击的论点" }],
+    distinction: [{ word: "waterproof", essence: "防水的（材质）" }, { word: "airtight", essence: "气密的" }, { word: "watertight", essence: "水密的/无懈可击的（密封+逻辑）" }],
+    memory: { methods: ["water + tight = 水都挤不进去 → 防水的", "引申：watertight argument = 无懈可击的论证"], visualHint: "潜水艇在水下密封完好" },
+    pitfalls: ["watertight 可比喻论点严密", "watertight ≠ waterproof（密封 vs 防水涂层）"],
+    summary: "watertight = 防水的，无懈可击的"
+  },
+  {
+    word: "awkward",
+    phonetic: { uk: "/ˈɔːkwəd/", us: "/ˈɔːkwərd/" },
+    root: { components: [{ part: "awk", meaning: "反向的，别扭的", origin: "古北欧语 afugr" }, { part: "-ward", meaning: "方向", origin: "" }], explanation: "awkward = 朝反方向的 → 别扭的，尴尬的" },
+    logic: { premise: "某种情况让人不自在", feature: "既不顺手也不自然", result: "产生尴尬或笨拙的感觉", essence: "令人尴尬的，笨拙的" },
+    usage: [{ context: "尴尬的", example: "an awkward silence", explanation: "尴尬的沉默" }, { context: "笨拙的", example: "awkward movements", explanation: "笨拙的动作" }, { context: "棘手的", example: "an awkward question", explanation: "棘手的问题" }],
+    distinction: [{ word: "embarrassing", essence: "令人难堪的" }, { word: "clumsy", essence: "笨手笨脚的" }, { word: "awkward", essence: "别扭的/尴尬的（更广泛）" }],
+    memory: { methods: ["awkward 听起来像'奥壳的'→ 硬壳卡住 → 别扭", "联想：awkward age 尴尬的年龄"], visualHint: "两个人在电梯里尴尬地避免眼神接触" },
+    pitfalls: ["awkward 有多个含义：尴尬/笨拙/棘手", "awkwardly 是副词"],
+    summary: "awkward = 尴尬的，笨拙的，棘手的"
+  },
+  {
+    word: "attire",
+    phonetic: { uk: "/əˈtaɪə(r)/", us: "/əˈtaɪər/" },
+    root: { components: [{ part: "a-", meaning: "向", origin: "" }, { part: "tire", meaning: "排列，装备", origin: "古法语 atirer" }], explanation: "attire = 装备好的 → 服装，盛装" },
+    logic: { premise: "不同场合需要不同穿着", feature: "精心搭配的正式着装", result: "体现身份和场合的服饰", essence: "正式的服装，着装" },
+    usage: [{ context: "服装", example: "formal attire", explanation: "正式着装" }, { context: "盛装", example: "in evening attire", explanation: "穿着晚礼服" }],
+    distinction: [{ word: "clothing", essence: "衣服（通用）" }, { word: "outfit", essence: "一套搭配" }, { word: "attire", essence: "服装（正式用语，强调场合）" }],
+    memory: { methods: ["attire 听起来像'阿泰尔'→ 穿着打扮", "联想：a tire（轮胎）→ attire 装备 → 服装"], visualHint: "晚宴上人们穿着正式礼服" },
+    pitfalls: ["attire 是不可数名词", "attire 是正式用语，比 clothing 更文雅"],
+    summary: "attire = 服装，盛装"
+  },
+  {
+    word: "expedition",
+    phonetic: { uk: "/ˌekspəˈdɪʃn/", us: "/ˌekspəˈdɪʃn/" },
+    root: { components: [{ part: "ex-", meaning: "出", origin: "" }, { part: "ped", meaning: "脚", origin: "拉丁语 pes/pedis" }, { part: "-ition", meaning: "名词后缀", origin: "" }], explanation: "expedition = 出脚行走 → 远征，探险" },
+    logic: { premise: "为了某个目的前往远方", feature: "组织团队进行系统性探索", result: "完成远征或探险任务", essence: "有组织的远征探险" },
+    usage: [{ context: "远征", example: "a polar expedition", explanation: "极地远征" }, { context: "探险", example: "a scientific expedition", explanation: "科学考察" }],
+    distinction: [{ word: "journey", essence: "旅程" }, { word: "adventure", essence: "冒险" }, { word: "expedition", essence: "远征/探险（有组织、有目的）" }],
+    memory: { methods: ["ex + ped（脚）+ ition = 出去走 → 远征", "联想：pedestrian 行人，pedal 踏板"], visualHint: "探险队在雪山中行进" },
+    pitfalls: ["expedition 强调'有组织有目的'", "shopping expedition = 大采购（幽默用法）"],
+    summary: "expedition = 远征，探险"
+  },
+  {
+    word: "interact",
+    phonetic: { uk: "/ˌɪntərˈækt/", us: "/ˌɪntərˈækt/" },
+    root: { components: [{ part: "inter-", meaning: "在...之间", origin: "" }, { part: "act", meaning: "行动", origin: "拉丁语 agere" }], explanation: "interact = 在彼此间行动 → 互动，交流" },
+    logic: { premise: "两个或多个主体存在", feature: "彼此之间产生影响", result: "形成互动关系", essence: "互相影响和交流" },
+    usage: [{ context: "互动", example: "interact with customers", explanation: "与客户互动" }, { context: "交互", example: "how humans interact with technology", explanation: "人与技术的交互" }],
+    distinction: [{ word: "communicate", essence: "沟通" }, { word: "cooperate", essence: "合作" }, { word: "interact", essence: "互动（互相影响）" }],
+    memory: { methods: ["inter + act = 在之间行动 → 互动", "联想：interaction 互动，interactive 交互式的"], visualHint: "两个人面对面交谈，思想碰撞" },
+    pitfalls: ["interact with = 与...互动", "interactively = 交互式地"],
+    summary: "interact = 互动，交流"
+  },
+  {
+    word: "congestion",
+    phonetic: { uk: "/kənˈdʒestʃən/", us: "/kənˈdʒestʃən/" },
+    root: { components: [{ part: "con-", meaning: "共同", origin: "" }, { part: "gest", meaning: "携带，堆积", origin: "拉丁语 gerere" }, { part: "-ion", meaning: "名词后缀", origin: "" }], explanation: "congestion = 堆积在一起 → 拥堵，充血" },
+    logic: { premise: "过多的人或物聚集在有限空间", feature: "超过容量导致堵塞", result: "交通或流动受阻", essence: "过度拥挤导致的堵塞" },
+    usage: [{ context: "交通拥堵", example: "traffic congestion", explanation: "交通拥堵" }, { context: "充血", example: "nasal congestion", explanation: "鼻塞" }],
+    distinction: [{ word: "crowding", essence: "拥挤" }, { word: "blockage", essence: "堵塞" }, { word: "congestion", essence: "拥堵（交通/医学，正式用语）" }],
+    memory: { methods: ["con + gest（堆积）+ ion = 堆在一起 → 拥堵", "联想：digest 消化，congest 拥塞"], visualHint: "高速公路上堵满了车" },
+    pitfalls: ["congestion 是正式用语", "congestion charge = 拥堵费"],
+    summary: "congestion = 拥堵，充血"
+  },
+  {
+    word: "harrow",
+    phonetic: { uk: "/ˈhærəʊ/", us: "/ˈhæroʊ/" },
+    root: { components: [{ part: "harrow", meaning: "耙（农具），使痛苦", origin: "古英语 harfe" }], explanation: "harrow = 用耙翻地 → 使痛苦，折磨" },
+    logic: { premise: "土地需要翻松或人经历极度痛苦", feature: "像被耙子耙过一样撕裂", result: "造成极大痛苦", essence: "极度痛苦和折磨" },
+    usage: [{ context: "折磨", example: "a harrowing experience", explanation: "痛苦的经历" }, { context: "耙地", example: "harrow the field", explanation: "耙地" }],
+    distinction: [{ word: "torment", essence: "折磨" }, { word: "distress", essence: "痛苦" }, { word: "harrow", essence: "极度折磨（像被耙子刮）" }],
+    memory: { methods: ["harrow 听起来像'好肉'→ 把肉耙烂 → 折磨", "harrowing = 令人痛苦的"], visualHint: "农夫用耙翻地，土地被划开" },
+    pitfalls: ["harrowing 是更常见的形容词形式", "harrow 作动词很少用，harrowing 更常见"],
+    summary: "harrow = 耙地，使痛苦"
+  },
+  {
+    word: "suffocation",
+    phonetic: { uk: "/ˌsʌfəˈkeɪʃn/", us: "/ˌsʌfəˈkeɪʃn/" },
+    root: { components: [{ part: "suf-", meaning: "在下面", origin: "" }, { part: "foc", meaning: "喉咙", origin: "拉丁语 fauces" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "suffocation = 压住喉咙 → 窒息" },
+    logic: { premise: "空气无法进入肺部", feature: "氧气供应被切断", result: "导致窒息", essence: "因缺氧而窒息" },
+    usage: [{ context: "窒息", example: "die of suffocation", explanation: "窒息而死" }, { context: "压抑感", example: "a feeling of suffocation", explanation: "窒息感" }],
+    distinction: [{ word: "asphyxiation", essence: "窒息（医学）" }, { word: "drowning", essence: "溺水" }, { word: "suffocation", essence: "窒息（通用，因任何原因缺氧）" }],
+    memory: { methods: ["suf（下面）+ foc（喉咙）+ ation = 压住喉咙 → 窒息", "联想：suffocate 使窒息"], visualHint: "被枕头捂住口鼻无法呼吸" },
+    pitfalls: ["suffocation 是不可数名词", "suffocate 是动词形式"],
+    summary: "suffocation = 窒息"
+  },
+  {
+    word: "nanotube",
+    phonetic: { uk: "/ˈnænəʊtjuːb/", us: "/ˈnænoʊtuːb/" },
+    root: { components: [{ part: "nano-", meaning: "纳米的，极小的", origin: "希腊语 nanos（矮小）" }, { part: "tube", meaning: "管子", origin: "拉丁语 tubus" }], explanation: "nanotube = 纳米级管子 → 纳米管" },
+    logic: { premise: "碳原子可以排列成管状结构", feature: "直径在纳米级别的空心管", result: "具有优异的物理化学性能", essence: "纳米尺度的管状结构" },
+    usage: [{ context: "纳米管", example: "carbon nanotubes", explanation: "碳纳米管" }],
+    distinction: [{ word: "nanoparticle", essence: "纳米颗粒" }, { word: "nanowire", essence: "纳米线" }, { word: "nanotube", essence: "纳米管（管状结构）" }],
+    memory: { methods: ["nano（纳米）+ tube（管）= 纳米管", "联想：carbon nanotube 碳纳米管"], visualHint: "极细的碳原子组成的管状结构" },
+    pitfalls: ["nanotube 是专业术语", "carbon nanotube 是最常见类型"],
+    summary: "nanotube = 纳米管"
+  },
+  {
+    word: "alligator",
+    phonetic: { uk: "/ˈælɪɡeɪtə(r)/", us: "/ˈælɪɡeɪtər/" },
+    root: { components: [{ part: "alligator", meaning: "短吻鳄", origin: "西班牙语 el lagarto（蜥蜴）" }], explanation: "alligator = 蜥蜴 → 短吻鳄" },
+    logic: { premise: "一种大型爬行动物", feature: "宽嘴巴、生活在淡水区域", result: "成为生态系统的顶级捕食者", essence: "短吻鳄" },
+    usage: [{ context: "短吻鳄", example: "an alligator in the swamp", explanation: "沼泽中的短吻鳄" }],
+    distinction: [{ word: "crocodile", essence: "鳄鱼（V型嘴，生活在咸水）" }, { word: "caiman", essence: "凯门鳄" }, { word: "alligator", essence: "短吻鳄（U型嘴，生活在淡水）" }],
+    memory: { methods: ["alligator 听起来像'爱丽格特'→ 鳄鱼品牌", "alligator vs crocodile：嘴型和栖息地不同"], visualHint: "佛罗里达沼泽中的短吻鳄" },
+    pitfalls: ["alligator ≠ crocodile（短吻鳄 ≠ 鳄鱼）", "alligator 的嘴是U型宽的"],
+    summary: "alligator = 短吻鳄"
+  }
+];

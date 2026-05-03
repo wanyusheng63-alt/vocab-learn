@@ -15,22 +15,22 @@ import {
   Quote,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { wordsData } from "@/data/words";
+import { allWordsData } from "@/data/allWords";
 
 export default function WordDetail() {
   const { word } = useParams<{ word: string }>();
   const navigate = useNavigate();
 
   const wordData = useMemo(() => {
-    return wordsData.find((w) => w.word.toLowerCase() === word?.toLowerCase());
+    return allWordsData.find((w) => w.word.toLowerCase() === word?.toLowerCase());
   }, [word]);
 
   const currentIndex = useMemo(() => {
-    return wordsData.findIndex((w) => w.word.toLowerCase() === word?.toLowerCase());
+    return allWordsData.findIndex((w) => w.word.toLowerCase() === word?.toLowerCase());
   }, [word]);
 
-  const prevWord = currentIndex > 0 ? wordsData[currentIndex - 1] : null;
-  const nextWord = currentIndex < wordsData.length - 1 ? wordsData[currentIndex + 1] : null;
+  const prevWord = currentIndex > 0 ? allWordsData[currentIndex - 1] : null;
+  const nextWord = currentIndex < allWordsData.length - 1 ? allWordsData[currentIndex + 1] : null;
 
   const playAudio = (accent: "uk" | "us") => {
     if (wordData) {
@@ -343,7 +343,7 @@ export default function WordDetail() {
             <div />
           )}
           <span className="text-sm text-muted-foreground">
-            {currentIndex + 1} / {wordsData.length}
+            {currentIndex + 1} / {allWordsData.length}
           </span>
           {nextWord ? (
             <button

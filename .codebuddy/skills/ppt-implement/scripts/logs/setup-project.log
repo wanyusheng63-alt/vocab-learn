@@ -6,3 +6,7 @@
 [2026-05-01 13:39:41] [DEBUG] [PPT Setup] stdin 数据: {"session_id":"2050201937601269760","transcript_path":"/root/.codebuddy/projects/workspace/2050201937601269760.jsonl","cwd":"/workspace","hook_event_name":"PreToolUse","tool_name":"Skill","tool_input":{"skill":"preview","args":"deploy"},"call_id":"Skill:30","tool_use_id":"Skill:30","permission_mode":"dontAsk","client":"CLI","version":"2.94.0","generation_id":"c3328d798801419a98f096e618f8de97","model":"kimi-k2.5"}
 [2026-05-01 13:39:41] [INFO] [PPT Setup] skill: preview
 [2026-05-01 13:39:41] [INFO] [PPT Setup] 跳过: skill 是 "preview"，不是 "ppt-implement"
+[2026-05-02 13:50:42] [INFO] ==== setup-project.js =====
+[2026-05-02 13:50:42] [DEBUG] [PPT Setup] stdin 数据: {"session_id":"2050201937601269760","transcript_path":"/root/.codebuddy/projects/workspace/2050201937601269760.jsonl","cwd":"/workspace","hook_event_name":"PreToolUse","tool_name":"Skill","tool_input":{"skill":"docx","args":"read /root/uploads/FIB生词本_1777729835395_w2gnq7.docx"},"call_id":"call_8bbcf6257db5497a97cb5fe7","tool_use_id":"call_8bbcf6257db5497a97cb5fe7","permission_mode":"dontAsk","client":"CLI","version":"2.94.0","generation_id":"17f1f0855b9e40b3b2aeab09bbb75bfc","model":"glm-5.1"}
+[2026-05-02 13:50:42] [INFO] [PPT Setup] skill: docx
+[2026-05-02 13:50:42] [INFO] [PPT Setup] 跳过: skill 是 "docx"，不是 "ppt-implement"

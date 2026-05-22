@@ -12,7 +12,7 @@ import {
   onSnapshot,
   Timestamp,
 } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { db, firebaseConfigured } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
 
 export interface Message {
@@ -67,10 +67,18 @@ export function useMessages() {
   const { user, isAdmin } = useAuth();
   const [messages, setMessages] = useState<Message[]>(getLocalMessages);
   const [loading, setLoading] = useState(true);
-  const [firebaseAvailable, setFirebaseAvailable] = useState(true);
+  const [firebaseAvailable, setFirebaseAvailable] = useState(firebaseConfigured);
 
   // Real-time listener from Firestore
   useEffect(() => {
+    // If Firebase is not configured, fall back to local storage immediately
+    if (!firebaseConfigured || !db) {
+      setMessages(getLocalMessages());
+      setFirebaseAvailable(false);
+      setLoading(false);
+      return;
+    }
+
     const colRef = collection(db, "messages");
     const q = query(colRef, orderBy("createdAt", "desc"));
 
@@ -125,7 +133,7 @@ export function useMessages() {
         replies: [],
       };
 
-      if (firebaseAvailable) {
+      if (firebaseAvailable && db) {
         try {
           await addDoc(collection(db, "messages"), {
             authorId,
@@ -135,43 +143,40 @@ export function useMessages() {
             replies: [],
           });
           return true;
-        } catch {
-          // Fall through to local
+        } catch (e) {
+          console.warn("Firestore write failed, saving locally:", e);
         }
       }
 
       // Local fallback
-      setMessages((prev) => {
-        const updated = [newMsg, ...prev];
-        saveLocalMessages(updated);
-        return updated;
-      });
+      const updated = [newMsg, ...messages];
+      setMessages(updated);
+      saveLocalMessages(updated);
       return true;
     },
-    [user, firebaseAvailable]
+    [user, firebaseAvailable, messages]
   );
 
   const deleteMessage = useCallback(
     async (messageId: string) => {
       if (!isAdmin) return false;
 
-      if (firebaseAvailable) {
+      if (firebaseAvailable && db) {
         try {
           await deleteDoc(doc(db, "messages", messageId));
           return true;
-        } catch {
-          // Fall through to local
+        } catch (e) {
+          console.warn("Firestore delete failed:", e);
         }
       }
 
-      setMessages((prev) => {
-        const updated = prev.filter((m) => m.id !== messageId);
-        saveLocalMessages(updated);
-        return updated;
-      });
+      // Local fallback
+      const updated = messages.filter((m) => m.id !== messageId);
+      setMessages(updated);
+      saveLocalMessages(updated);
       return true;
     },
-    [isAdmin, firebaseAvailable]
+    [isAdmin, firebaseAvailable, messages]
   );
 
   const postReply = useCallback(
@@ -187,7 +192,7 @@ export function useMessages() {
         createdAt: new Date(),
       };
 
-      if (firebaseAvailable) {
+      if (firebaseAvailable && db) {
         try {
           const msgRef = doc(db, "messages", messageId);
           await updateDoc(msgRef, {
@@ -200,24 +205,23 @@ export function useMessages() {
             }),
           });
           return true;
-        } catch {
-          // Fall through to local
+        } catch (e) {
+          console.warn("Firestore reply failed:", e);
         }
       }
 
-      setMessages((prev) => {
-        const updated = prev.map((m) =>
-          m.id === messageId
-            ? { ...m, replies: [...m.replies, newReply] }
-            : m
-        );
-        saveLocalMessages(updated);
-        return updated;
-      });
+      // Local fallback
+      const updated = messages.map((m) =>
+        m.id === messageId
+          ? { ...m, replies: [...m.replies, newReply] }
+          : m
+      );
+      setMessages(updated);
+      saveLocalMessages(updated);
       return true;
     },
-    [user, firebaseAvailable]
+    [user, firebaseAvailable, messages]
   );
 
-  return { messages, loading, firebaseAvailable, postMessage, deleteMessage, postReply };
+  return { messages, loading, postMessage, deleteMessage, postReply, firebaseAvailable };
 }

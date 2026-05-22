@@ -7,7 +7,7 @@ import {
   arrayUnion,
   arrayRemove,
 } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { db, firebaseConfigured } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
 
 const LOCAL_KEY = "vocablearn_favorites";
@@ -36,7 +36,7 @@ export function useCloudFavorites() {
 
   // 登录后从 Firestore 加载收藏
   useEffect(() => {
-    if (!user) {
+    if (!user || !firebaseConfigured || !db) {
       setFavorites(getLocalFavorites());
       return;
     }
@@ -66,6 +66,7 @@ export function useCloudFavorites() {
 
   const toggleFavorite = useCallback(
     async (word: string) => {
+      const isFav = favorites.has(word);
       setFavorites((prev) => {
         const next = new Set(prev);
         if (next.has(word)) {
@@ -77,9 +78,8 @@ export function useCloudFavorites() {
         return next;
       });
 
-      if (user) {
+      if (user && firebaseConfigured && db) {
         const ref = doc(db, "users", user.uid, "data", "favorites");
-        const isFav = favorites.has(word);
         try {
           if (isFav) {
             await updateDoc(ref, { words: arrayRemove(word) });

@@ -4,8 +4,9 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useAuth } from "@/contexts/AuthContext";
+import { firebaseConfigured } from "@/lib/firebase";
 import { toast } from "sonner";
-import { Loader2, LogIn, UserPlus } from "lucide-react";
+import { Loader2, LogIn, UserPlus, AlertCircle } from "lucide-react";
 
 interface AuthDialogProps {
   open: boolean;
@@ -19,6 +20,7 @@ export function AuthDialog({ open, onOpenChange }: AuthDialogProps) {
   const [displayName, setDisplayName] = useState("");
   const [loading, setLoading] = useState(false);
   const { signIn, signUp } = useAuth();
+  const isFirebaseReady = firebaseConfigured;
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -73,6 +75,15 @@ export function AuthDialog({ open, onOpenChange }: AuthDialogProps) {
             )}
           </DialogTitle>
         </DialogHeader>
+        {!isFirebaseReady && (
+          <div className="flex items-start gap-2 rounded-lg border border-amber-200 bg-amber-50 p-3 text-sm text-amber-800">
+            <AlertCircle className="mt-0.5 h-4 w-4 flex-shrink-0" />
+            <div>
+              <p className="font-medium">Firebase 尚未配置</p>
+              <p className="mt-0.5 text-xs">请按照项目 README 中的指南配置 Firebase，才能使用账号功能。未登录时所有功能仍可正常使用（数据保存在本地浏览器）。</p>
+            </div>
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="space-y-4 pt-2">
           {mode === "signup" && (
             <div className="space-y-1.5">

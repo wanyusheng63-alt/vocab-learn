@@ -12,7 +12,7 @@ import {
   query,
   orderBy,
 } from "firebase/firestore";
-import { db } from "@/lib/firebase";
+import { db, firebaseConfigured } from "@/lib/firebase";
 import { useAuth } from "@/contexts/AuthContext";
 
 export interface WordList {
@@ -48,7 +48,7 @@ export function useWordLists() {
 
   // 登录后从 Firestore 加载词单
   useEffect(() => {
-    if (!user) {
+    if (!user || !firebaseConfigured || !db) {
       setLists(getLocalLists());
       return;
     }
@@ -80,7 +80,7 @@ export function useWordLists() {
         createdAt: new Date(),
       };
 
-      if (user) {
+      if (user && firebaseConfigured && db) {
         try {
           const colRef = collection(db, "users", user.uid, "wordlists");
           const docRef = await addDoc(colRef, {
@@ -117,7 +117,7 @@ export function useWordLists() {
         saveLocalLists(updated);
         return updated;
       });
-      if (user) {
+      if (user && firebaseConfigured && db) {
         try {
           await deleteDoc(doc(db, "users", user.uid, "wordlists", listId));
         } catch {
@@ -139,7 +139,7 @@ export function useWordLists() {
         saveLocalLists(updated);
         return updated;
       });
-      if (user) {
+      if (user && firebaseConfigured && db) {
         try {
           await updateDoc(doc(db, "users", user.uid, "wordlists", listId), {
             words: arrayUnion(word),
@@ -163,7 +163,7 @@ export function useWordLists() {
         saveLocalLists(updated);
         return updated;
       });
-      if (user) {
+      if (user && firebaseConfigured && db) {
         try {
           await updateDoc(doc(db, "users", user.uid, "wordlists", listId), {
             words: arrayRemove(word),

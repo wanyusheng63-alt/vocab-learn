@@ -1,5 +1,6 @@
 import { useMemo } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
+import { useFavorites } from "@/hooks/use-favorites";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -13,6 +14,7 @@ import {
   Lightbulb,
   AlertTriangle,
   Quote,
+  Heart,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { allWordsData } from "@/data/allWords";
@@ -20,6 +22,7 @@ import { allWordsData } from "@/data/allWords";
 export default function WordDetail() {
   const { word } = useParams<{ word: string }>();
   const navigate = useNavigate();
+  const { isFavorite, toggleFavorite } = useFavorites();
 
   const wordData = useMemo(() => {
     return allWordsData.find((w) => w.word.toLowerCase() === word?.toLowerCase());
@@ -66,6 +69,17 @@ export default function WordDetail() {
             </Button>
           </Link>
           <div className="flex gap-2">
+            <Button
+              variant={wordData && isFavorite(wordData.word) ? "default" : "outline"}
+              size="sm"
+              onClick={() => wordData && toggleFavorite(wordData.word)}
+              className="gap-1.5"
+            >
+              <Heart
+                className={`h-4 w-4 ${wordData && isFavorite(wordData.word) ? "fill-current" : ""}`}
+              />
+              {wordData && isFavorite(wordData.word) ? "已收藏" : "收藏"}
+            </Button>
             {prevWord && (
               <Button
                 variant="outline"

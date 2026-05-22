@@ -6,6 +6,8 @@ import { AnimatedRoutes } from "@/components/AnimatedRoutes";
 import { PageTransition } from "@/components/PageTransition";
 import Index from "./pages/Index";
 import WordDetail from "./pages/WordDetail";
+import Favorites from "./pages/Favorites";
+import Feedback from "./pages/Feedback";
 import NotFound from "./pages/NotFound";
 
 /**
@@ -41,6 +43,8 @@ function App() {
           <AnimatedRoutes>
             <Route path="/" data-genie-title="Home Page" data-genie-key="Home" element={<PageTransition transition="slide-up"><Index /></PageTransition>} />
             <Route path="/word/:word" data-genie-title="Word Detail" data-genie-key="WordDetail" element={<PageTransition transition="slide-up"><WordDetail /></PageTransition>} />
+            <Route path="/favorites" data-genie-title="My Favorites" data-genie-key="Favorites" element={<PageTransition transition="slide-up"><Favorites /></PageTransition>} />
+            <Route path="/feedback" data-genie-title="Feedback" data-genie-key="Feedback" element={<PageTransition transition="slide-up"><Feedback /></PageTransition>} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" data-genie-key="NotFound" data-genie-title="Not Found" element={<PageTransition transition="fade"><NotFound /></PageTransition>} />
           </AnimatedRoutes>

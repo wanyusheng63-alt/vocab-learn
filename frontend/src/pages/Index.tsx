@@ -97,12 +97,19 @@ export default function Index() {
                   <div className="group rounded-xl border border-border bg-card p-6 shadow-sm transition-all duration-200 hover:shadow-md hover:border-primary/30">
                     <div className="flex items-start justify-between">
                       <div>
-                        <h3
-                          className="text-xl font-semibold text-foreground transition-colors group-hover:text-primary"
-                          style={{ fontFamily: "var(--font-family-display)" }}
-                        >
-                          {word.word}
-                        </h3>
+                        <div className="flex items-center gap-2">
+                          <h3
+                            className="text-xl font-semibold text-foreground transition-colors group-hover:text-primary"
+                            style={{ fontFamily: "var(--font-family-display)" }}
+                          >
+                            {word.word}
+                          </h3>
+                          {word.partOfSpeech && (
+                            <span className="inline-flex items-center rounded-full bg-primary/10 px-2 py-0.5 text-xs font-medium text-primary">
+                              {word.partOfSpeech}
+                            </span>
+                          )}
+                        </div>
                         <p className="mt-1 text-sm text-muted-foreground">
                           {word.phonetic.uk}
                         </p>

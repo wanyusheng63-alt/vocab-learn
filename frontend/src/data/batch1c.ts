@@ -3,6 +3,7 @@ import type { WordAnalysis } from "@/types/word";
 export const batch1c: WordAnalysis[] = [
   {
     word: "exacerbate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪɡˈzæsəbeɪt/", us: "/ɪɡˈzæsərbeɪt/" },
     root: { components: [{ part: "ex-", meaning: "出，完全", origin: "" }, { part: "acerb", meaning: "酸，尖锐", origin: "拉丁语 acerbus" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "exacerbate = 完全变尖锐 → 使恶化，加剧" },
     logic: { premise: "问题已经存在", feature: "施加额外压力使其更尖锐", result: "状况变得更加糟糕", essence: "使已有的坏情况更糟" },
@@ -14,6 +15,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "splurge",
+    partOfSpeech: "v",
     phonetic: { uk: "/splɜːdʒ/", us: "/splɜːrdʒ/" },
     root: { components: [{ part: "splurge", meaning: "挥霍，炫示", origin: "拟声词，暗示突然大量花费" }], explanation: "splurge = 突然大量花钱 → 挥霍，奢享" },
     logic: { premise: "平时节制消费", feature: "偶尔忍不住大把花钱", result: "享受了一次奢侈体验", essence: "偶尔放纵花钱享受" },
@@ -25,6 +27,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "reveal",
+    partOfSpeech: "v",
     phonetic: { uk: "/rɪˈviːl/", us: "/rɪˈviːl/" },
     root: { components: [{ part: "re-", meaning: "回，去", origin: "" }, { part: "veal", meaning: "覆盖", origin: "拉丁语 velum（面纱）" }], explanation: "reveal = 去掉覆盖物 → 揭示，显露" },
     logic: { premise: "真相或信息被遮盖", feature: "移除遮挡让其显露", result: "原本隐藏的事物被人看见", essence: "从隐藏变为可见" },
@@ -36,6 +39,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "microscopic",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌmaɪkrəˈskɒpɪk/", us: "/ˌmaɪkrəˈskɑːpɪk/" },
     root: { components: [{ part: "micro-", meaning: "微小的", origin: "希腊语 mikros" }, { part: "scop", meaning: "看", origin: "希腊语 skopein" }, { part: "-ic", meaning: "形容词后缀", origin: "" }], explanation: "microscopic = 用显微镜才能看到的 → 极微小的" },
     logic: { premise: "物体小到肉眼不可见", feature: "必须借助显微镜观察", result: "属于极微观尺度", essence: "小到需要显微镜才能看见" },
@@ -47,6 +51,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "presidential",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌprezɪˈdenʃl/", us: "/ˌprezɪˈdenʃl/" },
     root: { components: [{ part: "president", meaning: "总统，主席", origin: "拉丁语 praesidere（坐在前面）" }, { part: "-ial", meaning: "形容词后缀", origin: "" }], explanation: "presidential = 总统的，与总统有关的" },
     logic: { premise: "一个国家有总统制度", feature: "与总统职位或权力相关", result: "涉及总统级别的事务", essence: "总统级别的，与总统有关的" },
@@ -58,6 +63,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "to",
+    partOfSpeech: "prep",
     phonetic: { uk: "/tuː/", us: "/tuː/" },
     root: { components: [{ part: "to", meaning: "向，到，给", origin: "古英语 tō" }], explanation: "to = 介词/不定式标记，表示方向、目的或对象" },
     logic: { premise: "需要一个方向或目标", feature: "指向某处或某人", result: "表达运动方向或动作对象", essence: "表示方向、目的或关系" },
@@ -69,6 +75,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "avid",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈævɪd/", us: "/ˈævɪd/" },
     root: { components: [{ part: "avid", meaning: "渴望的，热切的", origin: "拉丁语 avidus（贪婪的）" }], explanation: "avid = 贪婪地追求 → 热切的，渴望的" },
     logic: { premise: "对某事物有强烈兴趣", feature: "贪婪般地投入热情", result: "表现出极度热忱", essence: "极度热忱和渴望" },
@@ -80,6 +87,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "virtually",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈvɜːtʃuəli/", us: "/ˈvɜːrtʃuəli/" },
     root: { components: [{ part: "virtu(e)", meaning: "力量，效能", origin: "拉丁语 virtus" }, { part: "-ally", meaning: "副词后缀", origin: "" }], explanation: "virtually = 在效力上 → 几乎，实际上" },
     logic: { premise: "形式上不是完全如此", feature: "但实质效果已等同于", result: "几乎就是那样的", essence: "实质上等同于，几乎" },
@@ -91,6 +99,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "ingrain",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈɡreɪn/", us: "/ɪnˈɡreɪn/" },
     root: { components: [{ part: "in-", meaning: "进入", origin: "" }, { part: "grain", meaning: "纹理，纤维", origin: "" }], explanation: "ingrain = 渗入纤维 → 使根深蒂固" },
     logic: { premise: "某种习惯或观念深入内心", feature: "像染料渗入纤维一样不可去除", result: "成为根深蒂固的一部分", essence: "深入骨髓，根深蒂固" },
@@ -102,6 +111,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "contrary",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈkɒntrəri/", us: "/ˈkɑːntreri/" },
     root: { components: [{ part: "contra-", meaning: "反对，相反", origin: "拉丁语 contra" }, { part: "-ry", meaning: "形容词/名词后缀", origin: "" }], explanation: "contrary = 相反的，对立的" },
     logic: { premise: "两种立场或观点对立", feature: "完全朝相反方向", result: "形成矛盾或对立", essence: "与...相反，对立的" },
@@ -113,6 +123,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "lessen",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈlesn/", us: "/ˈlesn/" },
     root: { components: [{ part: "less", meaning: "更少", origin: "" }, { part: "-en", meaning: "动词后缀，使...", origin: "" }], explanation: "lessen = 使变少 → 减少，减轻" },
     logic: { premise: "某事物的量或程度较大", feature: "使其变小或变弱", result: "数量或强度下降", essence: "使减少，使减轻" },
@@ -124,6 +135,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "imprisonment",
+    partOfSpeech: "n",
     phonetic: { uk: "/ɪmˈprɪznmənt/", us: "/ɪmˈprɪznmənt/" },
     root: { components: [{ part: "im-", meaning: "进入", origin: "" }, { part: "prison", meaning: "监狱", origin: "拉丁语 prens（抓住）" }, { part: "-ment", meaning: "名词后缀", origin: "" }], explanation: "imprisonment = 关进监狱 → 监禁，关押" },
     logic: { premise: "一个人犯了罪", feature: "被关进监狱失去自由", result: "受到监禁处罚", essence: "被剥夺自由的监禁状态" },
@@ -135,6 +147,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "rehabilitation",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌriːəˌbɪlɪˈteɪʃn/", us: "/ˌriːəˌbɪlɪˈteɪʃn/" },
     root: { components: [{ part: "re-", meaning: "再次", origin: "" }, { part: "habil", meaning: "能力，适合", origin: "拉丁语 habilitas" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "rehabilitation = 重新获得能力 → 康复，修复" },
     logic: { premise: "某人或某物受损或堕落", feature: "通过训练或修复重新获得能力", result: "恢复正常状态", essence: "恢复到正常或良好的状态" },
@@ -146,6 +159,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "commensurate",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kəˈmenʃərət/", us: "/kəˈmenʃərət/" },
     root: { components: [{ part: "com-", meaning: "共同", origin: "" }, { part: "mens", meaning: "测量", origin: "拉丁语 mensurare" }, { part: "-urate", meaning: "形容词后缀", origin: "" }], explanation: "commensurate = 共同测量的 → 相称的，成比例的" },
     logic: { premise: "两事物需要匹配", feature: "用同一标准衡量", result: "大小或程度相称", essence: "与...相称，成比例的" },
@@ -157,6 +171,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "eminently",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈemɪnəntli/", us: "/ˈemɪnəntli/" },
     root: { components: [{ part: "e-", meaning: "出", origin: "" }, { part: "min", meaning: "突出", origin: "拉丁语 minere（突出）" }, { part: "-ently", meaning: "副词后缀", origin: "" }], explanation: "eminently = 突出地 → 非常，极" },
     logic: { premise: "某种品质非常突出", feature: "突出到显而易见", result: "毫无疑问地具备该品质", essence: "非常，极其，突出地" },
@@ -168,6 +183,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "inexorable",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ɪnˈeksərəbl/", us: "/ɪnˈeksərəbl/" },
     root: { components: [{ part: "in-", meaning: "不", origin: "" }, { part: "exor", meaning: "祈求，说服", origin: "拉丁语 exorare" }, { part: "-able", meaning: "可...的", origin: "" }], explanation: "inexorable = 不可说服的 → 无法阻止的，不可阻挡的" },
     logic: { premise: "某种力量在推进", feature: "任何祈求都无法使之停下", result: "必然发生，无法逆转", essence: "不可阻挡的，必然的" },
@@ -179,6 +195,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "blight",
+    partOfSpeech: "n",
     phonetic: { uk: "/blaɪt/", us: "/blaɪt/" },
     root: { components: [{ part: "blight", meaning: "枯萎病，破坏因素", origin: "中古英语，可能与古北欧语相关" }], explanation: "blight = 植物枯萎病 → 破坏因素，祸害" },
     logic: { premise: "健康的事物受到侵害", feature: "像植物感染枯萎病一样衰败", result: "被破坏或毁损", essence: "破坏性的祸害" },
@@ -190,6 +207,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "unmask",
+    partOfSpeech: "v",
     phonetic: { uk: "/ʌnˈmɑːsk/", us: "/ʌnˈmæsk/" },
     root: { components: [{ part: "un-", meaning: "去除", origin: "" }, { part: "mask", meaning: "面具", origin: "法语 masque" }], explanation: "unmask = 去掉面具 → 揭露，暴露真面目" },
     logic: { premise: "某人戴着面具隐藏真面目", feature: "摘下面具露出真实面貌", result: "真相被揭露", essence: "揭露隐藏的真相或本质" },
@@ -201,6 +219,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "armor",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɑːmə(r)/", us: "/ˈɑːrmər/" },
     root: { components: [{ part: "armor", meaning: "盔甲，装甲", origin: "拉丁语 armatura" }], explanation: "armor = 盔甲 → 保护，装甲" },
     logic: { premise: "面临攻击或伤害的风险", feature: "穿上防护装备", result: "获得物理或象征性保护", essence: "保护性的盔甲或屏障" },
@@ -212,6 +231,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "unravel",
+    partOfSpeech: "v",
     phonetic: { uk: "/ʌnˈrævl/", us: "/ʌnˈrævl/" },
     root: { components: [{ part: "un-", meaning: "解开", origin: "" }, { part: "ravel", meaning: "缠绕", origin: "荷兰语 ravelen" }], explanation: "unravel = 解开缠绕 → 拆解，揭开" },
     logic: { premise: "复杂的事物缠绕在一起", feature: "逐根抽丝解开", result: "谜团或问题被理清", essence: "从纠缠中理出头绪" },
@@ -223,6 +243,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "mend",
+    partOfSpeech: "v",
     phonetic: { uk: "/mend/", us: "/mend/" },
     root: { components: [{ part: "mend", meaning: "修补，改善", origin: "古英语 menden" }], explanation: "mend = 修补破损 → 修理，改善" },
     logic: { premise: "物品或关系出现破损", feature: "通过修补使其恢复", result: "回到可用或良好状态", essence: "修补破损，使之恢复" },
@@ -234,6 +255,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "iconic",
+    partOfSpeech: "adj",
     phonetic: { uk: "/aɪˈkɒnɪk/", us: "/aɪˈkɑːnɪk/" },
     root: { components: [{ part: "icon", meaning: "偶像，图标", origin: "希腊语 eikōn（画像）" }, { part: "-ic", meaning: "形容词后缀", origin: "" }], explanation: "iconic = 如偶像般的 → 标志性的，象征性的" },
     logic: { premise: "某事物具有极高辨识度", feature: "代表了一种文化或时代的符号", result: "成为经典象征", essence: "标志性的，具有符号意义" },
@@ -245,6 +267,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "predominant",
+    partOfSpeech: "adj",
     phonetic: { uk: "/prɪˈdɒmɪnənt/", us: "/prɪˈdɑːmɪnənt/" },
     root: { components: [{ part: "pre-", meaning: "在前", origin: "" }, { part: "domin", meaning: "统治", origin: "拉丁语 dominari" }, { part: "-ant", meaning: "形容词后缀", origin: "" }], explanation: "predominant = 在前面统治的 → 占主导地位的" },
     logic: { premise: "多个因素或力量并存", feature: "其中一个明显占优势", result: "成为最突出或最重要的", essence: "占主导地位的，最显著的" },
@@ -256,6 +279,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "tongue",
+    partOfSpeech: "n",
     phonetic: { uk: "/tʌŋ/", us: "/tʌŋ/" },
     root: { components: [{ part: "tongue", meaning: "舌头，语言", origin: "古英语 tunge" }], explanation: "tongue = 舌头 → 语言，口才" },
     logic: { premise: "舌头是发音的器官", feature: "通过舌头说出语言", result: "tongue 引申为语言或口才", essence: "舌头；引申为语言或口才" },
@@ -267,6 +291,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "scorch",
+    partOfSpeech: "v",
     phonetic: { uk: "/skɔːtʃ/", us: "/skɔːrtʃ/" },
     root: { components: [{ part: "scorch", meaning: "烧焦，烤焦", origin: "中古英语，可能与古法语 escorchier 相关" }], explanation: "scorch = 高温烧灼 → 烤焦，使枯萎" },
     logic: { premise: "高温或烈日照射", feature: "表面被烧灼变色", result: "出现焦痕或枯萎", essence: "高温灼烧导致焦损" },
@@ -278,6 +303,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "abandon",
+    partOfSpeech: "v",
     phonetic: { uk: "/əˈbændən/", us: "/əˈbændən/" },
     root: { components: [{ part: "a-", meaning: "向", origin: "" }, { part: "bandon", meaning: "控制，权力", origin: "古法语 bandon（控制权）" }], explanation: "abandon = 放弃控制 → 抛弃，遗弃" },
     logic: { premise: "某人或某物受你控制", feature: "主动放弃对它的控制权", result: "被丢弃或遗弃", essence: "主动放弃，抛弃" },
@@ -289,6 +315,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "eminent",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈemɪnənt/", us: "/ˈemɪnənt/" },
     root: { components: [{ part: "e-", meaning: "出", origin: "" }, { part: "min", meaning: "突出", origin: "拉丁语 minere" }, { part: "-ent", meaning: "形容词后缀", origin: "" }], explanation: "eminent = 突出的 → 杰出的，著名的" },
     logic: { premise: "某人在某个领域表现出色", feature: "突出于众人之上", result: "享有盛誉和地位", essence: "在领域中杰出的" },
@@ -300,6 +327,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "confound",
+    partOfSpeech: "v",
     phonetic: { uk: "/kənˈfaʊnd/", us: "/kənˈfaʊnd/" },
     root: { components: [{ part: "con-", meaning: "完全", origin: "" }, { part: "found", meaning: "倾倒", origin: "拉丁语 fundere" }], explanation: "confound = 完全倾倒混合 → 使混淆，使困惑" },
     logic: { premise: "两种事物本应分开", feature: "被混在一起无法分辨", result: "产生困惑或错误", essence: "使混淆困惑" },
@@ -311,6 +339,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "cohort",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈkəʊhɔːt/", us: "/ˈkoʊhɔːrt/" },
     root: { components: [{ part: "co-", meaning: "共同", origin: "" }, { part: "hort", meaning: "围场", origin: "拉丁语 hortus（花园/围场）" }], explanation: "cohort = 同一围场中的人 → 同伴，群体" },
     logic: { premise: "一群人共同经历某事", feature: "属于同一批次或群体", result: "彼此具有同伴关系", essence: "同伴群体，同批人" },
@@ -322,6 +351,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "intimate",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈɪntɪmət/", us: "/ˈɪntɪmət/" },
     root: { components: [{ part: "intim", meaning: "最内部的", origin: "拉丁语 intimus（最内部的）" }, { part: "-ate", meaning: "形容词后缀", origin: "" }], explanation: "intimate = 最内部的 → 亲密的，私密的" },
     logic: { premise: "关系深入到内心层面", feature: "彼此了解最内在的部分", result: "形成极亲密的关系", essence: "亲密的，深入内心的" },
@@ -333,6 +363,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "interspecific",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌɪntəspɪˈsɪfɪk/", us: "/ˌɪntərspɪˈsɪfɪk/" },
     root: { components: [{ part: "inter-", meaning: "在...之间", origin: "" }, { part: "specific", meaning: "物种的", origin: "拉丁语 species" }], explanation: "interspecific = 物种之间的 → 种间的" },
     logic: { premise: "不同物种生活在同一环境", feature: "物种之间产生互动", result: "形成种间关系（竞争/共生等）", essence: "不同物种之间的" },
@@ -344,6 +375,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "rudimentary",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌruːdɪˈmentri/", us: "/ˌruːdɪˈmentri/" },
     root: { components: [{ part: "rudi", meaning: "粗糙，原始", origin: "拉丁语 rudis（粗糙的）" }, { part: "-ment", meaning: "名词后缀", origin: "" }, { part: "-ary", meaning: "形容词后缀", origin: "" }], explanation: "rudimentary = 粗糙的初始状态 → 基本的，初步的" },
     logic: { premise: "某事物刚起步", feature: "只有最基本最粗糙的形式", result: "还不够完善或高级", essence: "最基本的，初步的" },
@@ -355,6 +387,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "downturn",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈdaʊntɜːn/", us: "/ˈdaʊntɜːrn/" },
     root: { components: [{ part: "down", meaning: "向下", origin: "" }, { part: "turn", meaning: "转向", origin: "" }], explanation: "downturn = 向下转 → 衰退，下降" },
     logic: { premise: "经济或状况原本向好", feature: "趋势突然向下转变", result: "进入低迷期", essence: "由好转差的下降趋势" },
@@ -366,6 +399,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "contributory",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kənˈtrɪbjətəri/", us: "/kənˈtrɪbjətɔːri/" },
     root: { components: [{ part: "con-", meaning: "共同", origin: "" }, { part: "tribut", meaning: "给予，贡品", origin: "拉丁语 tribuere" }, { part: "-ory", meaning: "形容词后缀", origin: "" }], explanation: "contributory = 共同给予的 → 促成的，起作用的" },
     logic: { premise: "一个结果由多个因素导致", feature: "其中某个因素起到了促进作用", result: "该因素是结果的部分原因", essence: "促成的，起作用的" },
@@ -377,6 +411,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "molecular",
+    partOfSpeech: "adj",
     phonetic: { uk: "/məˈlekjələ(r)/", us: "/məˈlekjələr/" },
     root: { components: [{ part: "molecul(a)", meaning: "分子", origin: "拉丁语 moles（质量）+ cula（小）" }, { part: "-ar", meaning: "形容词后缀", origin: "" }], explanation: "molecular = 分子的 → 分子层面的" },
     logic: { premise: "物质由分子组成", feature: "在分子尺度上研究", result: "涉及分子级别的结构和过程", essence: "分子层面的，分子的" },
@@ -388,6 +423,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "speculation",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌspekjuˈleɪʃn/", us: "/ˌspekjəˈleɪʃn/" },
     root: { components: [{ part: "specul", meaning: "看，观察", origin: "拉丁语 speculatus" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "speculation = 观察思考 → 推测，投机" },
     logic: { premise: "信息不充分但有线索", feature: "基于观察做出推断", result: "形成假说或进行冒险投资", essence: "没有确凿证据的推测或投机" },
@@ -399,6 +435,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "quota",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈkwəʊtə/", us: "/ˈkwoʊtə/" },
     root: { components: [{ part: "quota", meaning: "份额，配额", origin: "拉丁语 quota pars（多少份）" }], explanation: "quota = 应占多少份 → 配额，限额" },
     logic: { premise: "需要限制或分配资源", feature: "规定每个主体的份额", result: "各方的数量受到限定", essence: "规定的数量配额" },
@@ -410,6 +447,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "representative",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌreprɪˈzentətɪv/", us: "/ˌreprɪˈzentətɪv/" },
     root: { components: [{ part: "re-", meaning: "再次", origin: "" }, { part: "present", meaning: "呈现", origin: "拉丁语 praesentare" }, { part: "-ative", meaning: "形容词/名词后缀", origin: "" }], explanation: "representative = 再次呈现的 → 代表，典型的" },
     logic: { premise: "一个群体需要有人发声", feature: "某人被选出重新呈现群体意志", result: "成为群体的代表", essence: "代表他人或典型的" },
@@ -421,6 +459,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "equitable",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈekwɪtəbl/", us: "/ˈekwɪtəbl/" },
     root: { components: [{ part: "equit(y)", meaning: "公平", origin: "拉丁语 aequitas" }, { part: "-able", meaning: "可...的", origin: "" }], explanation: "equitable = 可做到公平的 → 公平的，公正的" },
     logic: { premise: "需要分配资源或机会", feature: "按照公平原则分配", result: "各方得到公正对待", essence: "公平合理的，不偏不倚的" },
@@ -432,6 +471,7 @@ export const batch1c: WordAnalysis[] = [
   },
   {
     word: "revelation",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌrevəˈleɪʃn/", us: "/ˌrevəˈleɪʃn/" },
     root: { components: [{ part: "revel(=reveal)", meaning: "揭示", origin: "拉丁语 revelare" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "revelation = 揭示的行为 → 启示，揭露" },
     logic: { premise: "真相或重要信息被隐藏", feature: "突然被揭露出来", result: "令人震惊的发现", essence: "令人震惊的揭露或启示" },

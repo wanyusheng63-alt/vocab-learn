@@ -3,6 +3,7 @@ import type { WordAnalysis } from "@/types/word";
 export const wordsData: WordAnalysis[] = [
   {
     word: "daunt",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɔːnt/", us: "/dɔːnt/" },
     root: {
       components: [
@@ -42,6 +43,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "inventive",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ɪnˈventɪv/", us: "/ɪnˈventɪv/" },
     root: {
       components: [
@@ -83,6 +85,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "humid",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈhjuːmɪd/", us: "/ˈhjuːmɪd/" },
     root: {
       components: [
@@ -124,6 +127,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "vernacular",
+    partOfSpeech: "n",
     phonetic: { uk: "/vəˈnækjələ(r)/", us: "/vərˈnækjələr/" },
     root: {
       components: [
@@ -163,6 +167,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "inflame",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈfleɪm/", us: "/ɪnˈfleɪm/" },
     root: {
       components: [
@@ -203,6 +208,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "certify",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈsɜːtɪfaɪ/", us: "/ˈsɜːrtɪfaɪ/" },
     root: {
       components: [
@@ -243,6 +249,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "formalize",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈfɔːməlaɪz/", us: "/ˈfɔːrməlaɪz/" },
     root: {
       components: [
@@ -284,6 +291,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "cumbersome",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈkʌmbəsəm/", us: "/ˈkʌmbərsəm/" },
     root: {
       components: [
@@ -324,6 +332,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "toolkit",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈtuːlkɪt/", us: "/ˈtuːlkɪt/" },
     root: {
       components: [
@@ -364,6 +373,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "afield",
+    partOfSpeech: "adv",
     phonetic: { uk: "/əˈfiːld/", us: "/əˈfiːld/" },
     root: {
       components: [
@@ -404,6 +414,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "implicitly",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ɪmˈplɪsɪtli/", us: "/ɪmˈplɪsɪtli/" },
     root: {
       components: [
@@ -445,6 +456,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "hone",
+    partOfSpeech: "v",
     phonetic: { uk: "/həʊn/", us: "/hoʊn/" },
     root: {
       components: [
@@ -484,6 +496,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "tolerate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈtɒləreɪt/", us: "/ˈtɑːləreɪt/" },
     root: {
       components: [
@@ -524,6 +537,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "wealthy",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈwelθi/", us: "/ˈwelθi/" },
     root: {
       components: [
@@ -564,6 +578,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "incorporate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈkɔːpəreɪt/", us: "/ɪnˈkɔːrpəreɪt/" },
     root: {
       components: [
@@ -605,6 +620,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "initiate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪˈnɪʃieɪt/", us: "/ɪˈnɪʃieɪt/" },
     root: {
       components: [
@@ -645,6 +661,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "picturesque",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌpɪktʃəˈresk/", us: "/ˌpɪktʃəˈresk/" },
     root: {
       components: [
@@ -685,6 +702,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "dissemination",
+    partOfSpeech: "n",
     phonetic: { uk: "/dɪˌsemɪˈneɪʃn/", us: "/dɪˌsemɪˈneɪʃn/" },
     root: {
       components: [
@@ -726,6 +744,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "herald",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈherəld/", us: "/ˈherəld/" },
     root: {
       components: [
@@ -765,6 +784,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "flange",
+    partOfSpeech: "n",
     phonetic: { uk: "/flændʒ/", us: "/flændʒ/" },
     root: {
       components: [
@@ -804,6 +824,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "primitive",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈprɪmətɪv/", us: "/ˈprɪmətɪv/" },
     root: {
       components: [
@@ -844,6 +865,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "astonish",
+    partOfSpeech: "v",
     phonetic: { uk: "/əˈstɒnɪʃ/", us: "/əˈstɑːnɪʃ/" },
     root: {
       components: [
@@ -885,6 +907,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "chronic",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈkrɒnɪk/", us: "/ˈkrɑːnɪk/" },
     root: {
       components: [
@@ -925,6 +948,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "erratic",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ɪˈrætɪk/", us: "/ɪˈrætɪk/" },
     root: {
       components: [
@@ -965,6 +989,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "tend",
+    partOfSpeech: "v",
     phonetic: { uk: "/tend/", us: "/tend/" },
     root: {
       components: [
@@ -1004,6 +1029,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "crude",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kruːd/", us: "/kruːd/" },
     root: {
       components: [
@@ -1048,6 +1074,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "halt",
+    partOfSpeech: "v",
     phonetic: { uk: "/hɔːlt/", us: "/hɔːlt/" },
     root: {
       components: [
@@ -1087,6 +1114,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "eardrum",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɪədrʌm/", us: "/ˈɪrdrʌm/" },
     root: {
       components: [
@@ -1121,6 +1149,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "invigilator",
+    partOfSpeech: "n",
     phonetic: { uk: "/ɪnˈvɪdʒɪleɪtə(r)/", us: "/ɪnˈvɪdʒɪleɪtər/" },
     root: {
       components: [
@@ -1157,6 +1186,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "conflate",
+    partOfSpeech: "v",
     phonetic: { uk: "/kənˈfleɪt/", us: "/kənˈfleɪt/" },
     root: {
       components: [
@@ -1192,6 +1222,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "steadfast",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈstedfɑːst/", us: "/ˈstedfæst/" },
     root: {
       components: [
@@ -1232,6 +1263,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "forbid",
+    partOfSpeech: "v",
     phonetic: { uk: "/fəˈbɪd/", us: "/fərˈbɪd/" },
     root: {
       components: [
@@ -1272,6 +1304,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "pre-requisite",
+    partOfSpeech: "n",
     phonetic: { uk: "/priːˈrekwɪzɪt/", us: "/priːˈrekwɪzɪt/" },
     root: {
       components: [
@@ -1308,6 +1341,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "assert",
+    partOfSpeech: "v",
     phonetic: { uk: "/əˈsɜːt/", us: "/əˈsɜːrt/" },
     root: {
       components: [
@@ -1348,6 +1382,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "burgeon",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈbɜːdʒən/", us: "/ˈbɜːrdʒən/" },
     root: {
       components: [
@@ -1387,6 +1422,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "proponent",
+    partOfSpeech: "n",
     phonetic: { uk: "/prəˈpəʊnənt/", us: "/prəˈpoʊnənt/" },
     root: {
       components: [
@@ -1423,6 +1459,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "noticeably",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈnəʊtɪsəbli/", us: "/ˈnoʊtɪsəbli/" },
     root: {
       components: [
@@ -1459,6 +1496,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "reintroduce",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˌriːɪntrəˈdjuːs/", us: "/ˌriːɪntrəˈduːs/" },
     root: {
       components: [
@@ -1499,6 +1537,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "salvage",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈsælvɪdʒ/", us: "/ˈsælvɪdʒ/" },
     root: {
       components: [
@@ -1539,6 +1578,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "shed",
+    partOfSpeech: "v",
     phonetic: { uk: "/ʃed/", us: "/ʃed/" },
     root: {
       components: [
@@ -1583,6 +1623,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "waxy",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈwæksi/", us: "/ˈwæksi/" },
     root: {
       components: [
@@ -1623,6 +1664,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "autumn",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɔːtəm/", us: "/ˈɔːtəm/" },
     root: {
       components: [
@@ -1661,6 +1703,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "shelter",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈʃeltə(r)/", us: "/ˈʃeltər/" },
     root: {
       components: [
@@ -1700,6 +1743,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "efficacy",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈefɪkəsi/", us: "/ˈefɪkəsi/" },
     root: {
       components: [
@@ -1735,6 +1779,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "regulate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈreɡjuleɪt/", us: "/ˈreɡjuleɪt/" },
     root: {
       components: [
@@ -1775,6 +1820,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "scurry",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈskʌri/", us: "/ˈskɜːri/" },
     root: {
       components: [
@@ -1815,6 +1861,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "archipelago",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌɑːkɪˈpeləɡəʊ/", us: "/ˌɑːrkɪˈpeləɡoʊ/" },
     root: {
       components: [
@@ -1849,6 +1896,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "aground",
+    partOfSpeech: "adv",
     phonetic: { uk: "/əˈɡraʊnd/", us: "/əˈɡraʊnd/" },
     root: {
       components: [
@@ -1883,6 +1931,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "tendency",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈtendənsi/", us: "/ˈtendənsi/" },
     root: {
       components: [
@@ -1923,6 +1972,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "graphically",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈɡræfɪkli/", us: "/ˈɡræfɪkli/" },
     root: {
       components: [
@@ -1964,6 +2014,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "trivialize",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈtrɪviəlaɪz/", us: "/ˈtrɪviəlaɪz/" },
     root: {
       components: [
@@ -1999,6 +2050,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "bravery",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈbreɪvəri/", us: "/ˈbreɪvəri/" },
     root: {
       components: [
@@ -2034,6 +2086,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "dispose",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈspəʊz/", us: "/dɪˈspoʊz/" },
     root: {
       components: [
@@ -2074,6 +2127,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "discharge",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪsˈtʃɑːdʒ/", us: "/dɪsˈtʃɑːrdʒ/" },
     root: {
       components: [
@@ -2119,6 +2173,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "shift",
+    partOfSpeech: "v",
     phonetic: { uk: "/ʃɪft/", us: "/ʃɪft/" },
     root: {
       components: [
@@ -2163,6 +2218,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "invade",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈveɪd/", us: "/ɪnˈveɪd/" },
     root: {
       components: [
@@ -2203,6 +2259,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "strenuously",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈstrenjuəsli/", us: "/ˈstrenjuəsli/" },
     root: {
       components: [
@@ -2244,6 +2301,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "corrupt",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kəˈrʌpt/", us: "/kəˈrʌpt/" },
     root: {
       components: [
@@ -2289,6 +2347,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "sight",
+    partOfSpeech: "n",
     phonetic: { uk: "/saɪt/", us: "/saɪt/" },
     root: {
       components: [
@@ -2333,6 +2392,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "unpack",
+    partOfSpeech: "v",
     phonetic: { uk: "/ʌnˈpæk/", us: "/ʌnˈpæk/" },
     root: {
       components: [
@@ -2373,6 +2433,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "commit",
+    partOfSpeech: "v",
     phonetic: { uk: "/kəˈmɪt/", us: "/kəˈmɪt/" },
     root: {
       components: [
@@ -2418,6 +2479,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "breakthrough",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈbreɪkθruː/", us: "/ˈbreɪkθruː/" },
     root: {
       components: [
@@ -2458,6 +2520,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "comprise",
+    partOfSpeech: "v",
     phonetic: { uk: "/kəmˈpraɪz/", us: "/kəmˈpraɪz/" },
     root: {
       components: [
@@ -2498,6 +2561,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "relish",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈrelɪʃ/", us: "/ˈrelɪʃ/" },
     root: {
       components: [
@@ -2537,6 +2601,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "gulosity",
+    partOfSpeech: "n",
     phonetic: { uk: "/ɡjuːˈlɒsəti/", us: "/ɡjuːˈlɑːsəti/" },
     root: {
       components: [
@@ -2572,6 +2637,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "vehement",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈviːəmənt/", us: "/ˈviːəmənt/" },
     root: {
       components: [
@@ -2611,6 +2677,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "studiously",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈstjuːdiəsli/", us: "/ˈstuːdiəsli/" },
     root: {
       components: [
@@ -2651,6 +2718,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "dominance",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈdɒmɪnəns/", us: "/ˈdɑːmɪnəns/" },
     root: {
       components: [
@@ -2691,6 +2759,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "unprecedented",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ʌnˈpresɪdentɪd/", us: "/ʌnˈpresɪdentɪd/" },
     root: {
       components: [
@@ -2732,6 +2801,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "portion",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈpɔːʃn/", us: "/ˈpɔːrʃn/" },
     root: {
       components: [
@@ -2771,6 +2841,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "co-evolutionary",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kəʊˌiːvəˈluːʃənəri/", us: "/koʊˌiːvəˈluːʃəneri/" },
     root: {
       components: [
@@ -2806,6 +2877,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "disperse",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈspɜːs/", us: "/dɪˈspɜːrs/" },
     root: {
       components: [
@@ -2846,6 +2918,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "substance",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈsʌbstəns/", us: "/ˈsʌbstəns/" },
     root: {
       components: [
@@ -2892,6 +2965,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "laborious",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ləˈbɔːriəs/", us: "/ləˈbɔːriəs/" },
     root: {
       components: [
@@ -2932,6 +3006,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "gratification",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌɡrætɪfɪˈkeɪʃn/", us: "/ˌɡrætɪfɪˈkeɪʃn/" },
     root: {
       components: [
@@ -2972,6 +3047,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "expenditure",
+    partOfSpeech: "n",
     phonetic: { uk: "/ɪkˈspendɪtʃə(r)/", us: "/ɪkˈspendɪtʃər/" },
     root: {
       components: [
@@ -3013,6 +3089,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "hardcore",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈhɑːdkɔː(r)/", us: "/ˈhɑːrdkɔːr/" },
     root: {
       components: [
@@ -3053,6 +3130,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "attune",
+    partOfSpeech: "v",
     phonetic: { uk: "/əˈtjuːn/", us: "/əˈtuːn/" },
     root: {
       components: [
@@ -3093,6 +3171,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "corollary",
+    partOfSpeech: "n",
     phonetic: { uk: "/kəˈrɒləri/", us: "/ˈkɔːrəleri/" },
     root: {
       components: [
@@ -3133,6 +3212,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "overemphasize",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˌəʊvərˈemfəsaɪz/", us: "/ˌoʊvərˈemfəsaɪz/" },
     root: {
       components: [
@@ -3168,6 +3248,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "articulate",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ɑːˈtɪkjələt/", us: "/ɑːrˈtɪkjələt/" },
     root: {
       components: [
@@ -3207,6 +3288,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "integral",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈɪntɪɡrəl/", us: "/ˈɪntɪɡrəl/" },
     root: {
       components: [
@@ -3246,6 +3328,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "poll",
+    partOfSpeech: "n",
     phonetic: { uk: "/pəʊl/", us: "/poʊl/" },
     root: {
       components: [
@@ -3285,6 +3368,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "disproportionately",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˌdɪsprəˈpɔːʃənətli/", us: "/ˌdɪsprəˈpɔːrʃənətli/" },
     root: {
       components: [
@@ -3322,6 +3406,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "composition",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌkɒmpəˈzɪʃn/", us: "/ˌkɑːmpəˈzɪʃn/" },
     root: {
       components: [
@@ -3368,6 +3453,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "elicit",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪˈlɪsɪt/", us: "/ɪˈlɪsɪt/" },
     root: {
       components: [
@@ -3408,6 +3494,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "civilisation",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌsɪvəlaɪˈzeɪʃn/", us: "/ˌsɪvələˈzeɪʃn/" },
     root: {
       components: [
@@ -3446,6 +3533,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "cripple",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈkrɪpl/", us: "/ˈkrɪpl/" },
     root: {
       components: [
@@ -3485,6 +3573,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "integrative",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈɪntɪɡreɪtɪv/", us: "/ˈɪntɪɡreɪtɪv/" },
     root: {
       components: [
@@ -3519,6 +3608,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "emulate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈemjuleɪt/", us: "/ˈemjuleɪt/" },
     root: {
       components: [
@@ -3558,6 +3648,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "assumption",
+    partOfSpeech: "n",
     phonetic: { uk: "/əˈsʌmpʃn/", us: "/əˈsʌmpʃn/" },
     root: {
       components: [
@@ -3599,6 +3690,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "conservative",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kənˈsɜːvətɪv/", us: "/kənˈsɜːrvətɪv/" },
     root: {
       components: [
@@ -3645,6 +3737,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "reimagine",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˌriːɪˈmædʒɪn/", us: "/ˌriːɪˈmædʒɪn/" },
     root: {
       components: [
@@ -3680,6 +3773,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "sustenance",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈsʌstənəns/", us: "/ˈsʌstənəns/" },
     root: {
       components: [
@@ -3720,6 +3814,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "disproportionate",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌdɪsprəˈpɔːʃənət/", us: "/ˌdɪsprəˈpɔːrʃənət/" },
     root: {
       components: [
@@ -3756,6 +3851,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "donor",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈdəʊnə(r)/", us: "/ˈdoʊnər/" },
     root: {
       components: [
@@ -3796,6 +3892,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "jack",
+    partOfSpeech: "n",
     phonetic: { uk: "/dʒæk/", us: "/dʒæk/" },
     root: {
       components: [
@@ -3839,6 +3936,7 @@ export const wordsData: WordAnalysis[] = [
   },
   {
     word: "un",
+    partOfSpeech: "prefix",
     phonetic: { uk: "/ʌn/", us: "/ʌn/" },
     root: {
       components: [

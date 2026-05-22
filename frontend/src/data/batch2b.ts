@@ -3,6 +3,7 @@ import type { WordAnalysis } from "@/types/word";
 export const batch2b: WordAnalysis[] = [
   {
     word: "devise",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈvaɪz/", us: "/dɪˈvaɪz/" },
     root: { components: [{ part: "de-", meaning: "分开", origin: "" }, { part: "vis", meaning: "看", origin: "拉丁语 videre" }, { part: "-e", meaning: "", origin: "" }], explanation: "devise = 看清楚分开 → 设计，发明" },
     logic: { premise: "需要解决一个问题", feature: "通过仔细观察和思考想出方案", result: "创造出新的方法或计划", essence: "精心设计或发明" },
@@ -14,6 +15,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "outbreak",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈaʊtbreɪk/", us: "/ˈaʊtbreɪk/" },
     root: { components: [{ part: "out", meaning: "出", origin: "" }, { part: "break", meaning: "打破", origin: "" }], explanation: "outbreak = 破壳而出 → 爆发，突然发生" },
     logic: { premise: "某种负面力量在积累", feature: "突然突破限制爆发出来", result: "形成大规模事件", essence: "突然的大规模爆发" },
@@ -25,6 +27,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "fuel",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈfjuːəl/", us: "/ˈfjuːəl/" },
     root: { components: [{ part: "fuel", meaning: "燃料", origin: "古法语 fouaille（柴火）" }], explanation: "fuel = 提供能量的物质 → 燃料，刺激" },
     logic: { premise: "需要能量来驱动", feature: "提供持续的能量来源", result: "使机器运转或使情绪升级", essence: "提供能量的燃料或刺激因素" },
@@ -36,6 +39,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "variant",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈveəriənt/", us: "/ˈveriənt/" },
     root: { components: [{ part: "vari", meaning: "变化", origin: "拉丁语 variare" }, { part: "-ant", meaning: "名词/形容词后缀", origin: "" }], explanation: "variant = 变化的形式 → 变体，变种" },
     logic: { premise: "同一事物有不同形式", feature: "某个版本与其他略有不同", result: "形成变体或变种", essence: "同一事物的不同版本" },
@@ -47,6 +51,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "boom",
+    partOfSpeech: "n",
     phonetic: { uk: "/buːm/", us: "/buːm/" },
     root: { components: [{ part: "boom", meaning: "隆隆声，繁荣", origin: "拟声词，模仿大炮声" }], explanation: "boom = 隆隆巨响 → 突然繁荣，激增" },
     logic: { premise: "经济或市场突然活跃", feature: "快速膨胀增长", result: "出现繁荣景象", essence: "突然的快速增长和繁荣" },
@@ -58,6 +63,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "skyscraper",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈskaɪskreɪpə(r)/", us: "/ˈskaɪskreɪpər/" },
     root: { components: [{ part: "sky", meaning: "天空", origin: "" }, { part: "scrape", meaning: "刮，擦", origin: "" }, { part: "-er", meaning: "名词后缀", origin: "" }], explanation: "skyscraper = 擦到天空的 → 摩天大楼" },
     logic: { premise: "建筑越建越高", feature: "高度几乎触及天空", result: "成为超高层建筑", essence: "极高的大楼，摩天大楼" },
@@ -69,6 +75,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "prevail",
+    partOfSpeech: "v",
     phonetic: { uk: "/prɪˈveɪl/", us: "/prɪˈveɪl/" },
     root: { components: [{ part: "pre-", meaning: "在前", origin: "" }, { part: "vail", meaning: "力量", origin: "拉丁语 valere" }, { part: "-ail", meaning: "", origin: "" }], explanation: "prevail = 力量在前 → 胜出，盛行" },
     logic: { premise: "多方竞争或多种观点并存", feature: "一方力量超过其他", result: "占据优势或获胜", essence: "胜出，占上风，盛行" },
@@ -80,6 +87,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "exemplify",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪɡˈzemplɪfaɪ/", us: "/ɪɡˈzemplɪfaɪ/" },
     root: { components: [{ part: "exempl(=example)", meaning: "例子", origin: "拉丁语 exemplum" }, { part: "-ify", meaning: "动词后缀，使...", origin: "" }], explanation: "exemplify = 使成为例子 → 举例说明，作为典范" },
     logic: { premise: "需要证明某种观点", feature: "用具体实例来展示", result: "使抽象概念变得清楚", essence: "用实例说明或体现" },
@@ -91,6 +99,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "bulk",
+    partOfSpeech: "n",
     phonetic: { uk: "/bʌlk/", us: "/bʌlk/" },
     root: { components: [{ part: "bulk", meaning: "大量，体积", origin: "中古英语 bulke（货物堆）" }], explanation: "bulk = 大堆货物 → 大量，体积，主体" },
     logic: { premise: "大量物品堆在一起", feature: "形成庞大的体积或数量", result: "构成主要部分", essence: "大量，主体，庞大的体积" },
@@ -102,6 +111,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "lexicography",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌleksɪˈkɒɡrəfi/", us: "/ˌleksɪˈkɑːɡrəfi/" },
     root: { components: [{ part: "lexico", meaning: "词汇", origin: "希腊语 lexikos" }, { part: "graphy", meaning: "书写，学科", origin: "希腊语 graphia" }], explanation: "lexicography = 词汇书写 → 词典编纂学" },
     logic: { premise: "语言需要记录和规范", feature: "系统地编纂词典", result: "形成词典编纂的学问", essence: "词典编纂的科学" },
@@ -113,6 +123,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "symbolize",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈsɪmbəlaɪz/", us: "/ˈsɪmbəlaɪz/" },
     root: { components: [{ part: "symbol", meaning: "符号，象征", origin: "希腊语 symbolon" }, { part: "-ize", meaning: "动词后缀", origin: "" }], explanation: "symbolize = 用符号表示 → 象征，代表" },
     logic: { premise: "某物具有超越自身的含义", feature: "被用作某种概念的符号", result: "成为象征或代表", essence: "作为象征来代表" },
@@ -124,6 +135,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "dissipate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈdɪsɪpeɪt/", us: "/ˈdɪsɪpeɪt/" },
     root: { components: [{ part: "dis-", meaning: "分散", origin: "" }, { part: "sip", meaning: "抛撒", origin: "拉丁语 supare" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "dissipate = 四处抛撒 → 驱散，消散" },
     logic: { premise: "某种集中存在的物质或情绪", feature: "逐渐分散减弱", result: "最终消失", essence: "从集中到消散" },
@@ -135,6 +147,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "diverge",
+    partOfSpeech: "v",
     phonetic: { uk: "/daɪˈvɜːdʒ/", us: "/dɪˈvɜːrdʒ/" },
     root: { components: [{ part: "di-", meaning: "分开", origin: "" }, { part: "verg", meaning: "倾斜", origin: "拉丁语 vergere" }, { part: "-e", meaning: "", origin: "" }], explanation: "diverge = 向不同方向倾斜 → 分歧，偏离" },
     logic: { premise: "两条路径或观点原本一致", feature: "逐渐向不同方向延伸", result: "产生分歧或偏离", essence: "从一致走向分歧" },
@@ -146,6 +159,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "dialogue",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈdaɪəlɒɡ/", us: "/ˈdaɪəlɔːɡ/" },
     root: { components: [{ part: "dia-", meaning: "通过，之间", origin: "希腊语 dia" }, { part: "log", meaning: "说话", origin: "希腊语 logos" }, { part: "-ue", meaning: "名词后缀", origin: "" }], explanation: "dialogue = 在两者之间说话 → 对话" },
     logic: { premise: "两个人或群体需要沟通", feature: "通过言语交流想法", result: "增进理解或解决问题", essence: "双方之间的言语交流" },
@@ -157,6 +171,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "blossom",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈblɒsəm/", us: "/ˈblɑːsəm/" },
     root: { components: [{ part: "bloss", meaning: "花", origin: "古英语 blostma" }, { part: "-om", meaning: "名词后缀", origin: "" }], explanation: "blossom = 花 → 开花，发展" },
     logic: { premise: "花蕾经过孕育", feature: "在适宜条件下绽放", result: "展现美丽或取得发展", essence: "绽放，蓬勃发展" },
@@ -168,6 +183,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "staple",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈsteɪpl/", us: "/ˈsteɪpl/" },
     root: { components: [{ part: "stap", meaning: "固定的桩", origin: "古英语 stapol（柱子）" }, { part: "-le", meaning: "名词后缀", origin: "" }], explanation: "staple = 固定不变的东西 → 主食，主要产品" },
     logic: { premise: "某些物品是日常必需品", feature: "作为基础长期存在", result: "成为不可或缺的基础", essence: "基础性的，不可或缺的" },
@@ -179,6 +195,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "manifestation",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌmænɪfeˈsteɪʃn/", us: "/ˌmænɪfəˈsteɪʃn/" },
     root: { components: [{ part: "mani", meaning: "手", origin: "拉丁语 manus" }, { part: "fest", meaning: "抓住", origin: "拉丁语 festus" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "manifestation = 用手抓住使其可见 → 表现，显现" },
     logic: { premise: "某种抽象力量或情感存在", feature: "通过具体形式展现出来", result: "成为可见可感的表达", essence: "抽象事物的具体表现" },
@@ -190,6 +207,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "unsympathetic",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌʌnˌsɪmpəˈθetɪk/", us: "/ˌʌnˌsɪmpəˈθetɪk/" },
     root: { components: [{ part: "un-", meaning: "不", origin: "" }, { part: "sym", meaning: "共同", origin: "希腊语 syn" }, { part: "path", meaning: "感受", origin: "希腊语 pathos" }, { part: "-etic", meaning: "形容词后缀", origin: "" }], explanation: "unsympathetic = 没有共同感受的 → 不同情的，冷漠的" },
     logic: { premise: "他人遭受困境", feature: "无法与之共情", result: "表现出冷漠或不关心", essence: "缺乏同情心的" },
@@ -201,6 +219,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "plague",
+    partOfSpeech: "n",
     phonetic: { uk: "/pleɪɡ/", us: "/pleɪɡ/" },
     root: { components: [{ part: "plague", meaning: "瘟疫，祸患", origin: "拉丁语 plaga（打击）" }], explanation: "plague = 神的打击 → 瘟疫，祸患" },
     logic: { premise: "某种灾难大规模蔓延", feature: "像瘟疫一样传播和伤害", result: "造成广泛痛苦", essence: "大规模的灾害和痛苦" },
@@ -212,6 +231,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "pore",
+    partOfSpeech: "n",
     phonetic: { uk: "/pɔː(r)/", us: "/pɔːr/" },
     root: { components: [{ part: "pore", meaning: "毛孔，细孔", origin: "中古英语 pore" }], explanation: "pore = 皮肤上的小孔 → 毛孔，细孔" },
     logic: { premise: "皮肤或物质表面有微小开口", feature: "液体或气体可通过", result: "形成渗透或排汗通道", essence: "表面的微小开口" },
@@ -223,6 +243,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "prolific",
+    partOfSpeech: "adj",
     phonetic: { uk: "/prəˈlɪfɪk/", us: "/prəˈlɪfɪk/" },
     root: { components: [{ part: "prol(i)", meaning: "后代，繁殖", origin: "拉丁语 proles（后代）" }, { part: "-fic", meaning: "做，产生", origin: "拉丁语 facere" }], explanation: "prolific = 产生大量后代的 → 多产的，丰富的" },
     logic: { premise: "某人或某物有极强的产出能力", feature: "持续大量地生产", result: "作品或成果极为丰富", essence: "多产的，丰饶的" },
@@ -234,6 +255,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "utterance",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈʌtərəns/", us: "/ˈʌtərəns/" },
     root: { components: [{ part: "utter", meaning: "发出，说出", origin: "古英语 ūtian（向外）" }, { part: "-ance", meaning: "名词后缀", origin: "" }], explanation: "utterance = 向外发出的声音 → 话语，言论" },
     logic: { premise: "某人想要表达想法", feature: "通过发声将其表达出来", result: "形成一段话语或言论", essence: "说出的话或言论" },
@@ -245,6 +267,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "tremendous",
+    partOfSpeech: "adj",
     phonetic: { uk: "/trɪˈmendəs/", us: "/trəˈmendəs/" },
     root: { components: [{ part: "trem", meaning: "颤抖", origin: "拉丁语 tremere" }, { part: "-end", meaning: "值得...的", origin: "" }, { part: "-ous", meaning: "形容词后缀", origin: "" }], explanation: "tremendous = 令人颤抖的 → 巨大的，极好的" },
     logic: { premise: "某事物的程度令人震惊", feature: "大到令人发抖", result: "具有极强的冲击力", essence: "极大的，令人震撼的" },
@@ -256,6 +279,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "novelty",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈnɒvlti/", us: "/ˈnɑːvlti/" },
     root: { components: [{ part: "nov", meaning: "新的", origin: "拉丁语 novus" }, { part: "-elty", meaning: "名词后缀", origin: "" }], explanation: "novelty = 新奇的事物 → 新颖，新奇感" },
     logic: { premise: "某事物刚出现不久", feature: "给人带来新鲜感", result: "引发好奇和兴趣", essence: "新鲜感和新奇性" },
@@ -267,6 +291,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "domination",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌdɒmɪˈneɪʃn/", us: "/ˌdɑːmɪˈneɪʃn/" },
     root: { components: [{ part: "domin", meaning: "统治", origin: "拉丁语 dominari" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "domination = 统治的行为 → 支配，控制" },
     logic: { premise: "一方力量强于另一方", feature: "强势方对弱势方施加控制", result: "形成支配或统治关系", essence: "对他方的支配和控制" },
@@ -278,6 +303,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "array",
+    partOfSpeech: "n",
     phonetic: { uk: "/əˈreɪ/", us: "/əˈreɪ/" },
     root: { components: [{ part: "ar-", meaning: "向", origin: "" }, { part: "ray", meaning: "排列", origin: "拉丁语 arrigare" }], explanation: "array = 排列 → 一系列，阵列" },
     logic: { premise: "多个元素需要有序展示", feature: "按一定规则排列", result: "形成整齐的系列或阵列", essence: "一系列有序排列的事物" },
@@ -289,6 +315,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "brownie",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈbraʊni/", us: "/ˈbraʊni/" },
     root: { components: [{ part: "brown", meaning: "棕色", origin: "" }, { part: "-ie", meaning: "小东西", origin: "" }], explanation: "brownie = 棕色的小东西 → 巧克力布朗尼" },
     logic: { premise: "一种深棕色的甜点", feature: "质地介于蛋糕和饼干之间", result: "成为广受欢迎的甜品", essence: "巧克力布朗尼蛋糕" },
@@ -300,6 +327,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "stubborn",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈstʌbən/", us: "/ˈstʌbərn/" },
     root: { components: [{ part: "stubborn", meaning: "固执的", origin: "中古英语 stuborn（树桩般顽固）" }], explanation: "stubborn = 像树桩一样拔不动 → 固执的，顽强的" },
     logic: { premise: "某人不肯改变立场", feature: "即使面对理由也坚持己见", result: "难以说服或改变", essence: "顽固不肯改变的" },
@@ -311,6 +339,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "constitute",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈkɒnstɪtjuːt/", us: "/ˈkɑːnstɪtuːt/" },
     root: { components: [{ part: "con-", meaning: "共同", origin: "" }, { part: "stitut", meaning: "站立，放置", origin: "拉丁语 statuere" }, { part: "-e", meaning: "", origin: "" }], explanation: "constitute = 共同站立 → 组成，构成" },
     logic: { premise: "多个部分共同存在", feature: "组合在一起形成整体", result: "构成某种实体或状态", essence: "组成，构成" },
@@ -322,6 +351,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "infect",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈfekt/", us: "/ɪnˈfekt/" },
     root: { components: [{ part: "in-", meaning: "进入", origin: "" }, { part: "fect", meaning: "做，制造", origin: "拉丁语 facere" }], explanation: "infect = 在内部做手脚 → 感染，传染" },
     logic: { premise: "病原体侵入体内", feature: "在体内繁殖造成损害", result: "引发疾病或影响", essence: "侵入并造成感染" },
@@ -333,6 +363,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "parasite",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈpærəsaɪt/", us: "/ˈpærəsaɪt/" },
     root: { components: [{ part: "para-", meaning: "旁边", origin: "希腊语 para" }, { part: "sit", meaning: "食物", origin: "希腊语 sitos" }], explanation: "parasite = 在旁边吃东西 → 寄生虫" },
     logic: { premise: "一种生物依附于宿主", feature: "从宿主获取营养而不回馈", result: "损害宿主利益", essence: "寄生于他人/他物获益" },
@@ -344,6 +375,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "slideshow",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈslaɪdʃəʊ/", us: "/ˈslaɪdʃoʊ/" },
     root: { components: [{ part: "slide", meaning: "幻灯片", origin: "" }, { part: "show", meaning: "展示", origin: "" }], explanation: "slideshow = 幻灯片展示 → 幻灯片演示" },
     logic: { premise: "需要展示一系列图片或信息", feature: "按顺序播放幻灯片", result: "形成连续的视觉演示", essence: "连续播放的幻灯片演示" },
@@ -355,6 +387,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "whop",
+    partOfSpeech: "v",
     phonetic: { uk: "/wɒp/", us: "/wɑːp/" },
     root: { components: [{ part: "whop", meaning: "猛击，打败", origin: "拟声词，模仿重击声" }], explanation: "whop = 猛击声 → 重击，打败" },
     logic: { premise: "需要用大力气打击", feature: "猛然一击", result: "造成重创或击败对手", essence: "猛然重击或击败" },
@@ -366,6 +399,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "irritatingly",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈɪrɪteɪtɪŋli/", us: "/ˈɪrɪteɪtɪŋli/" },
     root: { components: [{ part: "irritat(e)", meaning: "激怒", origin: "拉丁语 irritare" }, { part: "-ing", meaning: "形容词后缀", origin: "" }, { part: "-ly", meaning: "副词后缀", origin: "" }], explanation: "irritatingly = 令人恼火地 → 惹人烦地" },
     logic: { premise: "某事持续令人不快", feature: "反复刺激神经", result: "产生烦躁恼怒的情绪", essence: "令人恼火地" },
@@ -377,6 +411,7 @@ export const batch2b: WordAnalysis[] = [
   },
   {
     word: "microbe",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈmaɪkrəʊb/", us: "/ˈmaɪkroʊb/" },
     root: { components: [{ part: "micro-", meaning: "微小的", origin: "希腊语 mikros" }, { part: "be", meaning: "生命", origin: "希腊语 bios" }], explanation: "microbe = 微小的生命 → 微生物" },
     logic: { premise: "存在肉眼看不见的微小生物", feature: "需要显微镜才能观察", result: "包括细菌、病毒等", essence: "微小的生物体" },

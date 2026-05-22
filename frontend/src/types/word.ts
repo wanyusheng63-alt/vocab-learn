@@ -4,6 +4,7 @@ export interface WordAnalysis {
     uk: string;
     us: string;
   };
+  partOfSpeech?: string;
   root: {
     components: Array<{
       part: string;

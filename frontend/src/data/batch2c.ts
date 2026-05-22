@@ -3,6 +3,7 @@ import type { WordAnalysis } from "@/types/word";
 export const batch2c: WordAnalysis[] = [
   {
     word: "coauthor",
+    partOfSpeech: "v",
     phonetic: { uk: "/kəʊˈɔːθə(r)/", us: "/koʊˈɔːθər/" },
     root: { components: [{ part: "co-", meaning: "共同", origin: "" }, { part: "author", meaning: "作者", origin: "拉丁语 auctor" }], explanation: "coauthor = 共同作者 → 合著" },
     logic: { premise: "一部作品由多人共同完成", feature: "两人或多人共同署名", result: "成为合著者", essence: "共同创作，合著" },
@@ -14,6 +15,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "predator",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈpredətə(r)/", us: "/ˈpredətər/" },
     root: { components: [{ part: "predat", meaning: "掠夺", origin: "拉丁语 praedari（掠夺）" }, { part: "-or", meaning: "做...的人", origin: "" }], explanation: "predator = 掠夺者 → 捕食者，掠夺者" },
     logic: { premise: "生态系统中存在食物链", feature: "某些动物靠捕食其他动物为生", result: "形成捕食关系", essence: "捕食其他生物的动物" },
@@ -25,6 +27,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "feather",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈfeðə(r)/", us: "/ˈfeðər/" },
     root: { components: [{ part: "feather", meaning: "羽毛", origin: "古英语 fether" }], explanation: "feather = 鸟类的羽毛 → 羽毛" },
     logic: { premise: "鸟类体表覆盖着轻质结构", feature: "提供飞行和保暖功能", result: "成为鸟类的标志性特征", essence: "鸟类的羽毛" },
@@ -36,6 +39,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "noiseless",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈnɔɪzləs/", us: "/ˈnɔɪzləs/" },
     root: { components: [{ part: "noise", meaning: "噪音", origin: "" }, { part: "-less", meaning: "无", origin: "" }], explanation: "noiseless = 无噪音的 → 无声的，寂静的" },
     logic: { premise: "环境或动作不产生声响", feature: "完全没有噪音", result: "极其安静", essence: "完全无声的" },
@@ -47,6 +51,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "desperately",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈdespərətli/", us: "/ˈdespərətli/" },
     root: { components: [{ part: "de-", meaning: "向下", origin: "" }, { part: "sper", meaning: "希望", origin: "拉丁语 sperare" }, { part: "-ately", meaning: "副词后缀", origin: "" }], explanation: "desperately = 失去希望地 → 绝望地，拼命地" },
     logic: { premise: "处于极端困难的境地", feature: "失去希望但仍拼命挣扎", result: "不顾一切地行动", essence: "绝望地，不顾一切地" },
@@ -58,6 +63,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "vocalization",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌvəʊkəlaɪˈzeɪʃn/", us: "/ˌvoʊkələˈzeɪʃn/" },
     root: { components: [{ part: "voc", meaning: "声音", origin: "拉丁语 vox/vocis" }, { part: "-al", meaning: "形容词后缀", origin: "" }, { part: "-ization", meaning: "名词后缀", origin: "" }], explanation: "vocalization = 发出声音的行为 → 发声，发声法" },
     logic: { premise: "人或动物需要发出声音", feature: "通过声带产生声音表达", result: "形成语言或叫声", essence: "发声的行为或结果" },
@@ -69,6 +75,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "diminish",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈmɪnɪʃ/", us: "/dɪˈmɪnɪʃ/" },
     root: { components: [{ part: "di-", meaning: "分开", origin: "" }, { part: "min", meaning: "小", origin: "拉丁语 minuere" }, { part: "-ish", meaning: "动词后缀", origin: "" }], explanation: "diminish = 使变小 → 减少，减弱" },
     logic: { premise: "某事物的量或重要性较大", feature: "逐渐变小或变弱", result: "影响力或数量下降", essence: "逐渐减少或减弱" },
@@ -80,6 +87,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "unbearable",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ʌnˈbeərəbl/", us: "/ʌnˈberəbl/" },
     root: { components: [{ part: "un-", meaning: "不", origin: "" }, { part: "bear", meaning: "承受", origin: "" }, { part: "-able", meaning: "可...的", origin: "" }], explanation: "unbearable = 不可承受的 → 难以忍受的" },
     logic: { premise: "某种痛苦或压力极大", feature: "超过了人的承受能力", result: "无法忍受", essence: "超出承受极限的" },
@@ -91,6 +99,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "albeit",
+    partOfSpeech: "conj",
     phonetic: { uk: "/ˌɔːlˈbiːɪt/", us: "/ˌɔːlˈbiːɪt/" },
     root: { components: [{ part: "all", meaning: "虽然", origin: "" }, { part: "be", meaning: "是", origin: "" }, { part: "it", meaning: "它", origin: "" }], explanation: "albeit = 虽然它是 → 尽管，虽然" },
     logic: { premise: "前文提出一个事实", feature: "后文出现一个让步条件", result: "形成'尽管...但是'的转折", essence: "尽管，虽然（让步连词）" },
@@ -102,6 +111,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "scale",
+    partOfSpeech: "n",
     phonetic: { uk: "/skeɪl/", us: "/skeɪl/" },
     root: { components: [{ part: "scale", meaning: "鳞片，刻度，规模", origin: "拉丁语 scala（梯子）" }], explanation: "scale = 梯子的级 → 刻度，规模，比例" },
     logic: { premise: "需要衡量事物的大小或程度", feature: "通过分级或刻度来量化", result: "形成衡量体系", essence: "规模，刻度，比例" },
@@ -113,6 +123,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "authenticity",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌɔːθenˈtɪsəti/", us: "/ˌɔːθenˈtɪsəti/" },
     root: { components: [{ part: "authent", meaning: "原始的，真实的", origin: "希腊语 authentikos" }, { part: "-icity", meaning: "名词后缀", origin: "" }], explanation: "authenticity = 真实的性质 → 真实性，正宗" },
     logic: { premise: "某物声称是真的", feature: "经过验证确认其来源", result: "被认定为真实的", essence: "真实性和可靠性" },
@@ -124,6 +135,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "spectacles",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈspektəklz/", us: "/ˈspektəklz/" },
     root: { components: [{ part: "spect", meaning: "看", origin: "拉丁语 specere" }, { part: "-acle", meaning: "名词后缀", origin: "" }, { part: "-s", meaning: "复数", origin: "" }], explanation: "spectacles = 用来看的东西 → 眼镜" },
     logic: { premise: "视力需要矫正", feature: "戴上辅助视力的器具", result: "看清事物", essence: "矫正视力的眼镜" },
@@ -135,6 +147,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "commemorate",
+    partOfSpeech: "v",
     phonetic: { uk: "/kəˈmeməreɪt/", us: "/kəˈmeməreɪt/" },
     root: { components: [{ part: "com-", meaning: "共同", origin: "" }, { part: "memor", meaning: "记忆", origin: "拉丁语 memorare" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "commemorate = 共同记忆 → 纪念" },
     logic: { premise: "某个重要事件或人物值得铭记", feature: "通过仪式或标志来提醒后人", result: "使记忆得以延续", essence: "正式地纪念" },
@@ -146,6 +159,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "fetch",
+    partOfSpeech: "v",
     phonetic: { uk: "/fetʃ/", us: "/fetʃ/" },
     root: { components: [{ part: "fetch", meaning: "去取，拿来", origin: "古英语 feccan" }], explanation: "fetch = 去取回来 → 取来，接来" },
     logic: { premise: "某物不在手边", feature: "走过去把它取回来", result: "把物品带到面前", essence: "去取并带回" },
@@ -157,6 +171,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "delicacy",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈdelɪkəsi/", us: "/ˈdelɪkəsi/" },
     root: { components: [{ part: "delic", meaning: "精致的，柔软的", origin: "拉丁语 delicates" }, { part: "-acy", meaning: "名词后缀", origin: "" }], explanation: "delicacy = 精致之物 → 美味佳肴，微妙" },
     logic: { premise: "某些食物制作精细稀有", feature: "口感独特令人珍视", result: "成为珍贵的美味", essence: "精致美味的稀有食物" },
@@ -168,6 +183,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "string",
+    partOfSpeech: "n",
     phonetic: { uk: "/strɪŋ/", us: "/strɪŋ/" },
     root: { components: [{ part: "string", meaning: "绳子，弦", origin: "古英语 streng" }], explanation: "string = 细绳 → 字符串，弦，一系列" },
     logic: { premise: "需要将多个东西连接", feature: "用细绳串起来", result: "形成一条线或序列", essence: "细绳，字符串，一系列" },
@@ -179,6 +195,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "surpass",
+    partOfSpeech: "v",
     phonetic: { uk: "/səˈpɑːs/", us: "/sərˈpæs/" },
     root: { components: [{ part: "sur-", meaning: "超过", origin: "拉丁语 super" }, { part: "pass", meaning: "通过", origin: "" }], explanation: "surpass = 越过 → 超越，胜过" },
     logic: { premise: "存在一个已有的标准或水平", feature: "某事物超过了这个标准", result: "达到更高的水平", essence: "超越既有的标准" },
@@ -190,6 +207,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "illusion",
+    partOfSpeech: "n",
     phonetic: { uk: "/ɪˈluːʒn/", us: "/ɪˈluːʒn/" },
     root: { components: [{ part: "il-", meaning: "在...上", origin: "" }, { part: "lus", meaning: "玩耍", origin: "拉丁语 ludere" }, { part: "-ion", meaning: "名词后缀", origin: "" }], explanation: "illusion = 在上面玩耍 → 错觉，幻觉" },
     logic: { premise: "感官被欺骗", feature: "看到的与实际不符", result: "产生虚假的认知", essence: "虚假的感知或幻觉" },
@@ -201,6 +219,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "fluctuate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈflʌktʃueɪt/", us: "/ˈflʌktʃueɪt/" },
     root: { components: [{ part: "fluctu", meaning: "波浪", origin: "拉丁语 fluctus" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "fluctuate = 像波浪一样 → 波动，起伏" },
     logic: { premise: "某事物不稳定", feature: "在高低之间来回变化", result: "形成波动趋势", essence: "上下起伏地波动" },
@@ -212,6 +231,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "watertight",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈwɔːtətaɪt/", us: "/ˈwɔːtərtaɪt/" },
     root: { components: [{ part: "water", meaning: "水", origin: "" }, { part: "tight", meaning: "紧密的", origin: "" }], explanation: "watertight = 水都透不过的 → 防水的，无懈可击的" },
     logic: { premise: "容器需要防止水渗入", feature: "密封得极其紧密", result: "水无法渗透", essence: "密封不透水的" },
@@ -223,6 +243,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "awkward",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈɔːkwəd/", us: "/ˈɔːkwərd/" },
     root: { components: [{ part: "awk", meaning: "反向的，别扭的", origin: "古北欧语 afugr" }, { part: "-ward", meaning: "方向", origin: "" }], explanation: "awkward = 朝反方向的 → 别扭的，尴尬的" },
     logic: { premise: "某种情况让人不自在", feature: "既不顺手也不自然", result: "产生尴尬或笨拙的感觉", essence: "令人尴尬的，笨拙的" },
@@ -234,6 +255,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "attire",
+    partOfSpeech: "n",
     phonetic: { uk: "/əˈtaɪə(r)/", us: "/əˈtaɪər/" },
     root: { components: [{ part: "a-", meaning: "向", origin: "" }, { part: "tire", meaning: "排列，装备", origin: "古法语 atirer" }], explanation: "attire = 装备好的 → 服装，盛装" },
     logic: { premise: "不同场合需要不同穿着", feature: "精心搭配的正式着装", result: "体现身份和场合的服饰", essence: "正式的服装，着装" },
@@ -245,6 +267,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "expedition",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌekspəˈdɪʃn/", us: "/ˌekspəˈdɪʃn/" },
     root: { components: [{ part: "ex-", meaning: "出", origin: "" }, { part: "ped", meaning: "脚", origin: "拉丁语 pes/pedis" }, { part: "-ition", meaning: "名词后缀", origin: "" }], explanation: "expedition = 出脚行走 → 远征，探险" },
     logic: { premise: "为了某个目的前往远方", feature: "组织团队进行系统性探索", result: "完成远征或探险任务", essence: "有组织的远征探险" },
@@ -256,6 +279,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "interact",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˌɪntərˈækt/", us: "/ˌɪntərˈækt/" },
     root: { components: [{ part: "inter-", meaning: "在...之间", origin: "" }, { part: "act", meaning: "行动", origin: "拉丁语 agere" }], explanation: "interact = 在彼此间行动 → 互动，交流" },
     logic: { premise: "两个或多个主体存在", feature: "彼此之间产生影响", result: "形成互动关系", essence: "互相影响和交流" },
@@ -267,6 +291,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "congestion",
+    partOfSpeech: "n",
     phonetic: { uk: "/kənˈdʒestʃən/", us: "/kənˈdʒestʃən/" },
     root: { components: [{ part: "con-", meaning: "共同", origin: "" }, { part: "gest", meaning: "携带，堆积", origin: "拉丁语 gerere" }, { part: "-ion", meaning: "名词后缀", origin: "" }], explanation: "congestion = 堆积在一起 → 拥堵，充血" },
     logic: { premise: "过多的人或物聚集在有限空间", feature: "超过容量导致堵塞", result: "交通或流动受阻", essence: "过度拥挤导致的堵塞" },
@@ -278,6 +303,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "harrow",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈhærəʊ/", us: "/ˈhæroʊ/" },
     root: { components: [{ part: "harrow", meaning: "耙（农具），使痛苦", origin: "古英语 harfe" }], explanation: "harrow = 用耙翻地 → 使痛苦，折磨" },
     logic: { premise: "土地需要翻松或人经历极度痛苦", feature: "像被耙子耙过一样撕裂", result: "造成极大痛苦", essence: "极度痛苦和折磨" },
@@ -289,6 +315,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "suffocation",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌsʌfəˈkeɪʃn/", us: "/ˌsʌfəˈkeɪʃn/" },
     root: { components: [{ part: "suf-", meaning: "在下面", origin: "" }, { part: "foc", meaning: "喉咙", origin: "拉丁语 fauces" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "suffocation = 压住喉咙 → 窒息" },
     logic: { premise: "空气无法进入肺部", feature: "氧气供应被切断", result: "导致窒息", essence: "因缺氧而窒息" },
@@ -300,6 +327,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "nanotube",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈnænəʊtjuːb/", us: "/ˈnænoʊtuːb/" },
     root: { components: [{ part: "nano-", meaning: "纳米的，极小的", origin: "希腊语 nanos（矮小）" }, { part: "tube", meaning: "管子", origin: "拉丁语 tubus" }], explanation: "nanotube = 纳米级管子 → 纳米管" },
     logic: { premise: "碳原子可以排列成管状结构", feature: "直径在纳米级别的空心管", result: "具有优异的物理化学性能", essence: "纳米尺度的管状结构" },
@@ -311,6 +339,7 @@ export const batch2c: WordAnalysis[] = [
   },
   {
     word: "alligator",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈælɪɡeɪtə(r)/", us: "/ˈælɪɡeɪtər/" },
     root: { components: [{ part: "alligator", meaning: "短吻鳄", origin: "西班牙语 el lagarto（蜥蜴）" }], explanation: "alligator = 蜥蜴 → 短吻鳄" },
     logic: { premise: "一种大型爬行动物", feature: "宽嘴巴、生活在淡水区域", result: "成为生态系统的顶级捕食者", essence: "短吻鳄" },

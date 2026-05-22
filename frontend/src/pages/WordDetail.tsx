@@ -104,6 +104,11 @@ export default function WordDetail() {
             >
               {wordData.word}
             </h1>
+            {wordData.partOfSpeech && (
+              <div className="mt-2 inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+                {wordData.partOfSpeech}
+              </div>
+            )}
             <div className="mt-4 flex justify-center gap-6">
               <button
                 onClick={() => playAudio("uk")}

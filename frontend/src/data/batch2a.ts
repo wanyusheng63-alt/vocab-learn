@@ -3,6 +3,7 @@ import type { WordAnalysis } from "@/types/word";
 export const batch2a: WordAnalysis[] = [
   {
     word: "blend",
+    partOfSpeech: "v",
     phonetic: { uk: "/blend/", us: "/blend/" },
     root: { components: [{ part: "blend", meaning: "混合", origin: "古北欧语 blanda" }], explanation: "blend = 混合在一起 → 融合，调配" },
     logic: { premise: "两种或多种事物各有特色", feature: "将它们和谐地混合", result: "形成新的融合体", essence: "和谐地混合融合" },
@@ -14,6 +15,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "anticipate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ænˈtɪsɪpeɪt/", us: "/ænˈtɪsɪpeɪt/" },
     root: { components: [{ part: "anti-", meaning: "在前", origin: "" }, { part: "cip", meaning: "抓住", origin: "拉丁语 capere" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "anticipate = 提前抓住 → 预期，期望" },
     logic: { premise: "未来会发生某事", feature: "提前感知并准备", result: "做出预期或准备", essence: "提前预期并做准备" },
@@ -25,6 +27,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "delegate",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈdelɪɡət/", us: "/ˈdelɪɡət/" },
     root: { components: [{ part: "de-", meaning: "向下", origin: "" }, { part: "leg", meaning: "派遣", origin: "拉丁语 legare" }, { part: "-ate", meaning: "动词/名词后缀", origin: "" }], explanation: "delegate = 向下派遣 → 委派，代表" },
     logic: { premise: "上级有任务需要执行", feature: "将任务交给下级处理", result: "权力或责任被分配", essence: "委托授权或被委派的代表" },
@@ -36,6 +39,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "sculpture",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈskʌlptʃə(r)/", us: "/ˈskʌlptʃər/" },
     root: { components: [{ part: "sculpt", meaning: "雕刻", origin: "拉丁语 sculptus（雕刻的）" }, { part: "-ure", meaning: "名词后缀", origin: "" }], explanation: "sculpture = 雕刻的成品 → 雕塑，雕刻品" },
     logic: { premise: "一块原材料", feature: "通过雕刻塑形", result: "形成艺术品", essence: "通过雕刻创造的艺术品" },
@@ -47,6 +51,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "odd",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ɒd/", us: "/ɑːd/" },
     root: { components: [{ part: "odd", meaning: "奇数的，奇怪的", origin: "古诺斯语 oddi（尖角）" }], explanation: "odd = 尖角的 → 不对称的 → 奇怪的，奇数的" },
     logic: { premise: "某事物与常规不同", feature: "不对称或不配对", result: "显得奇特或多余", essence: "奇怪的，不成对的，奇数的" },
@@ -58,6 +63,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "mysterious",
+    partOfSpeech: "adj",
     phonetic: { uk: "/mɪˈstɪəriəs/", us: "/mɪˈstɪriəs/" },
     root: { components: [{ part: "myster(y)", meaning: "神秘", origin: "希腊语 mystērion（秘密仪式）" }, { part: "-ious", meaning: "形容词后缀", origin: "" }], explanation: "mysterious = 充满秘密的 → 神秘的，不可思议的" },
     logic: { premise: "某事物无法被理解或解释", feature: "隐藏着未知的秘密", result: "引发好奇或不安", essence: "充满未知和秘密的" },
@@ -69,6 +75,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "exotic",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ɪɡˈzɒtɪk/", us: "/ɪɡˈzɑːtɪk/" },
     root: { components: [{ part: "exot", meaning: "外面的", origin: "希腊语 exōtikos（外来的）" }, { part: "-ic", meaning: "形容词后缀", origin: "" }], explanation: "exotic = 从外面来的 → 异国情调的，奇异的" },
     logic: { premise: "某物来自远方异域", feature: "本地不常见，带有异域特色", result: "显得新鲜独特而引人注目", essence: "异域的，新奇的" },
@@ -80,6 +87,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "compulsory",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kəmˈpʌlsəri/", us: "/kəmˈpʌlsəri/" },
     root: { components: [{ part: "compuls", meaning: "驱使", origin: "拉丁语 compellere" }, { part: "-ory", meaning: "形容词后缀", origin: "" }], explanation: "compulsory = 被驱使的 → 强制的，义务的" },
     logic: { premise: "某项规定必须执行", feature: "没有选择的余地", result: "所有人都必须遵守", essence: "强制性的，必须的" },
@@ -91,6 +99,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "conviction",
+    partOfSpeech: "n",
     phonetic: { uk: "/kənˈvɪkʃn/", us: "/kənˈvɪkʃn/" },
     root: { components: [{ part: "con-", meaning: "完全", origin: "" }, { part: "vict", meaning: "征服", origin: "拉丁语 vincere" }, { part: "-ion", meaning: "名词后缀", origin: "" }], explanation: "conviction = 完全征服 → 定罪，坚定的信念" },
     logic: { premise: "内心被某种观念完全征服", feature: "毫无怀疑地相信", result: "形成坚定不移的信念", essence: "坚定的信念或法律上的定罪" },
@@ -102,6 +111,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "honor",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɒnə(r)/", us: "/ˈɑːnər/" },
     root: { components: [{ part: "honor", meaning: "荣誉，尊敬", origin: "拉丁语 honos/honor" }], explanation: "honor = 荣誉 → 尊敬，荣誉" },
     logic: { premise: "某人因品德或成就值得敬重", feature: "社会赋予崇高的评价", result: "获得尊重和荣耀", essence: "荣誉，尊敬，致敬" },
@@ -113,6 +123,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "mimic",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈmɪmɪk/", us: "/ˈmɪmɪk/" },
     root: { components: [{ part: "mimic", meaning: "模仿", origin: "希腊语 mimos（模仿者）" }], explanation: "mimic = 模仿 → 模拟，效仿" },
     logic: { premise: "某种行为或特征存在", feature: "复制其外观或行为", result: "看起来与原物相似", essence: "模仿，模拟" },
@@ -124,6 +135,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "deterrence",
+    partOfSpeech: "n",
     phonetic: { uk: "/dɪˈterəns/", us: "/dɪˈtɜːrəns/" },
     root: { components: [{ part: "de-", meaning: "远离", origin: "" }, { part: "terr", meaning: "恐惧", origin: "拉丁语 terrere" }, { part: "-ence", meaning: "名词后缀", origin: "" }], explanation: "deterrence = 使恐惧而远离 → 威慑，遏制" },
     logic: { premise: "存在潜在威胁行为", feature: "通过恐惧或惩罚阻止", result: "对方不敢行动", essence: "通过威吓来阻止" },
@@ -135,6 +147,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "jurisdiction",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌdʒʊərɪsˈdɪkʃn/", us: "/ˌdʒʊrɪsˈdɪkʃn/" },
     root: { components: [{ part: "juris", meaning: "法律", origin: "拉丁语 jus/juris" }, { part: "dict", meaning: "说，宣布", origin: "拉丁语 dicere" }, { part: "-ion", meaning: "名词后缀", origin: "" }], explanation: "jurisdiction = 依法宣布 → 司法权，管辖权" },
     logic: { premise: "法律体系需要界定权力范围", feature: "规定谁有权在哪个区域执法", result: "形成管辖权限", essence: "司法管辖的权力范围" },
@@ -146,6 +159,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "innovator",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɪnəveɪtə(r)/", us: "/ˈɪnəveɪtər/" },
     root: { components: [{ part: "in-", meaning: "进入", origin: "" }, { part: "nov", meaning: "新的", origin: "拉丁语 novus" }, { part: "-ator", meaning: "做...的人", origin: "" }], explanation: "innovator = 引入新事物的人 → 创新者" },
     logic: { premise: "某个领域存在旧模式", feature: "有人引入全新的方法或理念", result: "推动变革和进步", essence: "推动创新的人" },
@@ -157,6 +171,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "colloquial",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kəˈləʊkwiəl/", us: "/kəˈloʊkwiəl/" },
     root: { components: [{ part: "col-", meaning: "共同", origin: "" }, { part: "loqu", meaning: "说话", origin: "拉丁语 loqui" }, { part: "-ial", meaning: "形容词后缀", origin: "" }], explanation: "colloquial = 一起说话的 → 口语的，通俗的" },
     logic: { premise: "正式用语和日常用语有别", feature: "日常交谈中使用的通俗表达", result: "形成口语化的风格", essence: "口语化的，通俗的" },
@@ -168,6 +183,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "benchmark",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈbentʃmɑːk/", us: "/ˈbentʃmɑːrk/" },
     root: { components: [{ part: "bench", meaning: "长凳，基准台", origin: "" }, { part: "mark", meaning: "标记", origin: "" }], explanation: "benchmark = 基准台上的标记 → 基准，标准" },
     logic: { premise: "需要衡量性能或质量", feature: "设定一个参考标准", result: "其他事物以此为比较依据", essence: "衡量标准的参照点" },
@@ -179,6 +195,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "thrive",
+    partOfSpeech: "v",
     phonetic: { uk: "/θraɪv/", us: "/θraɪv/" },
     root: { components: [{ part: "thrive", meaning: "兴旺，茁壮成长", origin: "古北欧语 þrífa（抓住）" }], explanation: "thrive = 抓住机会 → 繁荣，茁壮成长" },
     logic: { premise: "有利的环境或条件", feature: "充分利用资源成长", result: "兴旺发达", essence: "在有利条件下蓬勃发展" },
@@ -190,6 +207,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "sedentary",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈsedntri/", us: "/ˈsednteri/" },
     root: { components: [{ part: "sed", meaning: "坐", origin: "拉丁语 sedere" }, { part: "-ent", meaning: "形容词后缀", origin: "" }, { part: "-ary", meaning: "形容词后缀", origin: "" }], explanation: "sedentary = 坐着的 → 久坐的，定居的" },
     logic: { premise: "现代生活方式缺少运动", feature: "长时间坐着不动", result: "形成久坐的生活习惯", essence: "久坐的，缺乏运动的" },
@@ -201,6 +219,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "defense",
+    partOfSpeech: "n",
     phonetic: { uk: "/dɪˈfens/", us: "/dɪˈfens/" },
     root: { components: [{ part: "de-", meaning: "远离", origin: "" }, { part: "fens", meaning: "打击", origin: "拉丁语 fendere" }, { part: "-e", meaning: "", origin: "" }], explanation: "defense = 击退攻击 → 防御，辩护" },
     logic: { premise: "面临攻击或指控", feature: "采取措施保护或反驳", result: "形成防御或辩护", essence: "抵御攻击或指控的保护" },
@@ -212,6 +231,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "cavity",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈkævəti/", us: "/ˈkævəti/" },
     root: { components: [{ part: "cav", meaning: "空洞", origin: "拉丁语 cavus（空的）" }, { part: "-ity", meaning: "名词后缀", origin: "" }], explanation: "cavity = 空洞的状态 → 腔，洞，龋洞" },
     logic: { premise: "固体内部出现空隙", feature: "形成凹陷或空洞", result: "成为腔体或蛀洞", essence: "内部的空洞或腔体" },
@@ -223,6 +243,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "receptor",
+    partOfSpeech: "n",
     phonetic: { uk: "/rɪˈseptə(r)/", us: "/rɪˈseptər/" },
     root: { components: [{ part: "re-", meaning: "回", origin: "" }, { part: "cept", meaning: "拿取", origin: "拉丁语 capere" }, { part: "-or", meaning: "名词后缀", origin: "" }], explanation: "receptor = 接收回来的东西 → 受体，感受器" },
     logic: { premise: "细胞需要感知外界信号", feature: "表面有专门接收信号的蛋白", result: "将信号传入细胞内部", essence: "接收信号的分子或装置" },
@@ -234,6 +255,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "respiratory",
+    partOfSpeech: "adj",
     phonetic: { uk: "/rɪˈspɪrətri/", us: "/ˈrespərətɔːri/" },
     root: { components: [{ part: "re-", meaning: "再次", origin: "" }, { part: "spir", meaning: "呼吸", origin: "拉丁语 spirare" }, { part: "-atory", meaning: "形容词后缀", origin: "" }], explanation: "respiratory = 反复呼吸的 → 呼吸的" },
     logic: { premise: "生物需要持续呼吸", feature: "与呼吸系统相关", result: "涉及呼吸功能", essence: "与呼吸相关的" },
@@ -245,6 +267,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "wearable",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈweərəbl/", us: "/ˈwerəbl/" },
     root: { components: [{ part: "wear", meaning: "穿戴", origin: "" }, { part: "-able", meaning: "可...的", origin: "" }], explanation: "wearable = 可穿戴的 → 可穿戴设备" },
     logic: { premise: "技术设备越来越小型化", feature: "可以穿戴在身上", result: "成为可穿戴的智能设备", essence: "可穿戴的技术设备" },
@@ -256,6 +279,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "wrinkle",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈrɪŋkl/", us: "/ˈrɪŋkl/" },
     root: { components: [{ part: "wrink", meaning: "弯曲", origin: "古英语 wrincle（褶皱）" }, { part: "-le", meaning: "名词/动词后缀", origin: "" }], explanation: "wrinkle = 弯曲的褶皱 → 皱纹，起皱" },
     logic: { premise: "皮肤或布料因老化或挤压", feature: "表面出现褶皱线条", result: "形成皱纹或褶痕", essence: "表面上的褶皱或皱纹" },
@@ -267,6 +291,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "polyester",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌpɒliˈestə(r)/", us: "/ˌpɑːliˈestər/" },
     root: { components: [{ part: "poly-", meaning: "多", origin: "希腊语 polys" }, { part: "ester", meaning: "酯", origin: "德语 Essigäther" }], explanation: "polyester = 多酯聚合物 → 聚酯纤维" },
     logic: { premise: "化学合成的高分子材料", feature: "由多个酯键连接而成", result: "形成耐用的合成纤维", essence: "聚酯合成纤维" },
@@ -278,6 +303,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "speculative",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈspekjələtɪv/", us: "/ˈspekjəleɪtɪv/" },
     root: { components: [{ part: "specul", meaning: "看，观察", origin: "拉丁语 speculatus" }, { part: "-ative", meaning: "形容词后缀", origin: "" }], explanation: "speculative = 基于观察猜测的 → 推测性的，投机的" },
     logic: { premise: "信息不足但需要决策", feature: "基于推测而非确凿证据", result: "带有不确定性和风险", essence: "推测性的，带有风险的" },
@@ -289,6 +315,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "battle",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈbætl/", us: "/ˈbætl/" },
     root: { components: [{ part: "batt", meaning: "打击", origin: "拉丁语 battuere" }, { part: "-le", meaning: "名词后缀", origin: "" }], explanation: "battle = 互相打击 → 战斗，战役" },
     logic: { premise: "双方存在激烈冲突", feature: "通过武力或意志对抗", result: "产生胜负结果", essence: "激烈的对抗和斗争" },
@@ -300,6 +327,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "obscurity",
+    partOfSpeech: "n",
     phonetic: { uk: "/əbˈskjʊərəti/", us: "/əbˈskjʊrəti/" },
     root: { components: [{ part: "ob-", meaning: "覆盖", origin: "" }, { part: "scur", meaning: "遮盖", origin: "拉丁语 obscurus" }, { part: "-ity", meaning: "名词后缀", origin: "" }], explanation: "obscurity = 被遮盖的状态 → 默默无闻，模糊" },
     logic: { premise: "某人或某物不为人知", feature: "缺乏关注或不够清晰", result: "处于默默无闻的状态", essence: "不为人知的状态或模糊不清" },
@@ -311,6 +339,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "nevertheless",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˌnevəðəˈles/", us: "/ˌnevərðəˈles/" },
     root: { components: [{ part: "never", meaning: "从不", origin: "" }, { part: "the", meaning: "那个", origin: "" }, { part: "less", meaning: "较少", origin: "" }], explanation: "nevertheless = 不会因此减少 → 然而，尽管如此" },
     logic: { premise: "前文提出了某种不利条件", feature: "但结果并不会因此改变", result: "转折到另一个结论", essence: "尽管如此，仍然" },
@@ -322,6 +351,7 @@ export const batch2a: WordAnalysis[] = [
   },
   {
     word: "discernible",
+    partOfSpeech: "adj",
     phonetic: { uk: "/dɪˈsɜːnəbl/", us: "/dɪˈsɜːrnəbl/" },
     root: { components: [{ part: "dis-", meaning: "分开", origin: "" }, { part: "cern", meaning: "辨别", origin: "拉丁语 cernere" }, { part: "-ible", meaning: "可...的", origin: "" }], explanation: "discernible = 可以分辨的 → 可辨别的，可识别的" },
     logic: { premise: "某事物模糊但存在", feature: "仔细辨认后能看出来", result: "确认其存在或特征", essence: "虽不清晰但可被察觉" },

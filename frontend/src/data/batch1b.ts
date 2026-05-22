@@ -3,6 +3,7 @@ import type { WordAnalysis } from "@/types/word";
 export const batch1b: WordAnalysis[] = [
   {
     word: "derive",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈraɪv/", us: "/dɪˈraɪv/" },
     root: { components: [{ part: "de-", meaning: "从", origin: "" }, { part: "riv", meaning: "溪流", origin: "拉丁语 rivus" }], explanation: "derive = 从河流引出 → 源自，获得，推导" },
     logic: { premise: "某事物有来源", feature: "从源头引出或获得", result: "得到结果或追溯来源", essence: "从源头获取或追溯" },
@@ -14,6 +15,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "spectacular",
+    partOfSpeech: "adj",
     phonetic: { uk: "/spekˈtækjələ(r)/", us: "/spekˈtækjələr/" },
     root: { components: [{ part: "spect", meaning: "看", origin: "拉丁语 specere" }, { part: "-acular", meaning: "形容词后缀", origin: "" }], explanation: "spectacular = 值得看的 → 壮观的，惊人的" },
     logic: { premise: "视觉效果极强", feature: "震撼到让人惊叹", result: "引起强烈注意和赞叹", essence: "视觉震撼到让人惊叹" },
@@ -25,6 +27,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "deteriorate",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈtɪəriəreɪt/", us: "/dɪˈtɪriəreɪt/" },
     root: { components: [{ part: "deterior", meaning: "更坏的", origin: "拉丁语 deterior" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "deteriorate = 变得更坏 → 恶化，退化" },
     logic: { premise: "事物原本状态尚可", feature: "逐渐变差变坏", result: "质量或状况持续下降", essence: "持续变差的过程" },
@@ -36,6 +39,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "occupancy",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɒkjəpənsi/", us: "/ˈɑːkjəpənsi/" },
     root: { components: [{ part: "occup", meaning: "占据，占领", origin: "拉丁语 occupare" }, { part: "-ancy", meaning: "名词后缀", origin: "" }], explanation: "occupancy = 占有，入住率" },
     logic: { premise: "空间被使用或占据", feature: "有人居住或使用", result: "形成占用状态", essence: "空间被占据的状态或比率" },
@@ -47,6 +51,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "submerge",
+    partOfSpeech: "v",
     phonetic: { uk: "/səbˈmɜːdʒ/", us: "/səbˈmɜːrdʒ/" },
     root: { components: [{ part: "sub-", meaning: "在下面", origin: "" }, { part: "merge", meaning: "沉入，融入", origin: "拉丁语 mergere" }], explanation: "submerge = 沉入水下 → 淹没，浸没" },
     logic: { premise: "物体在水面上", feature: "被推入水面以下", result: "完全被水覆盖", essence: "完全沉入水中" },
@@ -58,6 +63,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "counter",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈkaʊntə(r)/", us: "/ˈkaʊntər/" },
     root: { components: [{ part: "count", meaning: "计算，对抗", origin: "拉丁语 computare" }], explanation: "counter = 对抗，反击，柜台，计数器" },
     logic: { premise: "存在某种行动或力量", feature: "以相反的行动回应", result: "抵消或对抗原有力量", essence: "以相反力量对抗" },
@@ -69,6 +75,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "synchronise",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈsɪŋkrənaɪz/", us: "/ˈsɪŋkrənaɪz/" },
     root: { components: [{ part: "syn-", meaning: "共同", origin: "希腊语 syn" }, { part: "chron", meaning: "时间", origin: "希腊语 khronos" }, { part: "-ise", meaning: "动词后缀", origin: "" }], explanation: "synchronise = 使时间一致 → 同步" },
     logic: { premise: "多个设备或进程需要协调", feature: "使它们在时间上一致", result: "保持同步运行", essence: "使时间一致化" },
@@ -80,6 +87,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "cultivate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈkʌltɪveɪt/", us: "/ˈkʌltɪveɪt/" },
     root: { components: [{ part: "cultiv-", meaning: "耕种，培育", origin: "拉丁语 cultivare" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "cultivate = 耕种 → 培养，培育，发展" },
     logic: { premise: "需要投入时间和精力", feature: "像耕种一样精心照料", result: "使事物成长发展", essence: "精心培育使成长" },
@@ -91,6 +99,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "neurotoxic",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌnjʊərəʊˈtɒksɪk/", us: "/ˌnʊroʊˈtɑːksɪk/" },
     root: { components: [{ part: "neuro-", meaning: "神经", origin: "希腊语 neuron" }, { part: "toxic", meaning: "有毒的", origin: "希腊语 toxikon" }], explanation: "neurotoxic = 对神经有毒的" },
     logic: { premise: "某种物质进入体内", feature: "对神经系统造成损害", result: "神经功能受损", essence: "对神经系统有毒性" },
@@ -102,6 +111,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "flatlined",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈflætlaɪnd/", us: "/ˈflætlaɪnd/" },
     root: { components: [{ part: "flat", meaning: "平的", origin: "" }, { part: "line", meaning: "线", origin: "" }, { part: "-d", meaning: "过去式/形容词", origin: "" }], explanation: "flatlined = 心电图成平线 → 死亡，停滞" },
     logic: { premise: "心电图从波动变为平线", feature: "表示心脏停止跳动", result: "临床死亡或完全停滞", essence: "从有活力到完全停止" },
@@ -113,6 +123,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "heritage",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈherɪtɪdʒ/", us: "/ˈherɪtɪdʒ/" },
     root: { components: [{ part: "herit", meaning: "继承", origin: "拉丁语 heres" }, { part: "-age", meaning: "名词后缀", origin: "" }], explanation: "heritage = 继承物 → 遗产，传统" },
     logic: { premise: "先人留下的有价值的财富", feature: "代代相传，需要保护", result: "成为文化或历史的珍贵遗产", essence: "代代相传的珍贵遗产" },
@@ -124,6 +135,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "ironically",
+    partOfSpeech: "adv",
     phonetic: { uk: "/aɪˈrɒnɪkli/", us: "/aɪˈrɑːnɪkli/" },
     root: { components: [{ part: "ironic", meaning: "讽刺的", origin: "" }, { part: "-ally", meaning: "副词后缀", origin: "" }], explanation: "ironically = 讽刺地，具有讽刺意味的是" },
     logic: { premise: "结果与预期相反", feature: "出人意料地反转", result: "产生讽刺效果", essence: "与预期相反的讽刺" },
@@ -135,6 +147,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "calve",
+    partOfSpeech: "v",
     phonetic: { uk: "/kɑːv/", us: "/kæv/" },
     root: { components: [{ part: "calve", meaning: "产犊，崩裂", origin: "古英语 cealf" }], explanation: "calve = 产犊 → 冰山崩裂" },
     logic: { premise: "冰山或冰川边缘", feature: "大块冰从主体断裂脱落", result: "形成新的冰山", essence: "从主体断裂脱落" },
@@ -146,6 +159,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "exceed",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪkˈsiːd/", us: "/ɪkˈsiːd/" },
     root: { components: [{ part: "ex-", meaning: "超出", origin: "" }, { part: "ceed", meaning: "走", origin: "拉丁语 cedere" }], explanation: "exceed = 走出去 → 超过，超出" },
     logic: { premise: "有设定的限制或标准", feature: "实际数量或程度超过限制", result: "超出预定范围", essence: "超越设定的界限" },
@@ -157,6 +171,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "audience",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɔːdiəns/", us: "/ˈɔːdiəns/" },
     root: { components: [{ part: "aud-", meaning: "听", origin: "拉丁语 audire" }, { part: "-ience", meaning: "名词后缀", origin: "" }], explanation: "audience = 听众 → 观众，读者" },
     logic: { premise: "有人表演或发言", feature: "一群人前来观看或聆听", result: "形成受众群体", essence: "接收信息或表演的群体" },
@@ -168,6 +183,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "intrigue",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈtriːɡ/", us: "/ɪnˈtriːɡ/" },
     root: { components: [{ part: "in-", meaning: "在内", origin: "" }, { part: "trigue", meaning: "纠缠，障碍", origin: "拉丁语 intricare" }], explanation: "intrigue = 内部纠缠 → 引起好奇，密谋" },
     logic: { premise: "某事物有神秘或复杂的特质", feature: "引发强烈好奇心", result: "想要了解更多", essence: "引发好奇的神秘吸引力" },
@@ -179,6 +195,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "fascinate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈfæsɪneɪt/", us: "/ˈfæsɪneɪt/" },
     root: { components: [{ part: "fascin", meaning: "魔力，魅惑", origin: "拉丁语 fascinum" }], explanation: "fascinate = 施魔法般吸引 → 使着迷" },
     logic: { premise: "某事物有极强的吸引力", feature: "像施了魔法一样抓住注意力", result: "无法移开目光或注意力", essence: "魔力般的深度吸引" },
@@ -190,6 +207,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "distribute",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈstrɪbjuːt/", us: "/dɪˈstrɪbjuːt/" },
     root: { components: [{ part: "dis-", meaning: "分开", origin: "" }, { part: "tribut", meaning: "给予，分配", origin: "拉丁语 tribuere" }], explanation: "distribute = 分开给予 → 分配，分销，分布" },
     logic: { premise: "有大量物品或资源", feature: "按一定方式分发给各方", result: "每个接收方得到一份", essence: "从集中到分散的分配" },
@@ -201,6 +219,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "variable",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈveəriəbl/", us: "/ˈveriəbl/" },
     root: { components: [{ part: "vari", meaning: "变化", origin: "拉丁语 variare" }, { part: "-able", meaning: "可...的", origin: "" }], explanation: "variable = 可变的 → 多变的，变量" },
     logic: { premise: "某事物会发生变化", feature: "不固定，可变", result: "结果或状态不确定", essence: "可变化的不确定性" },
@@ -212,6 +231,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "decisive",
+    partOfSpeech: "adj",
     phonetic: { uk: "/dɪˈsaɪsɪv/", us: "/dɪˈsaɪsɪv/" },
     root: { components: [{ part: "decis", meaning: "决定", origin: "拉丁语 decidere" }, { part: "-ive", meaning: "形容词后缀", origin: "" }], explanation: "decisive = 决定性的，果断的" },
     logic: { premise: "需要在关键时刻做出选择", feature: "果断地做出决定", result: "产生明确的结果", essence: "起决定作用或果断" },
@@ -223,6 +243,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "eliminate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪˈlɪmɪneɪt/", us: "/ɪˈlɪmɪneɪt/" },
     root: { components: [{ part: "e-", meaning: "出", origin: "" }, { part: "limin", meaning: "门槛", origin: "拉丁语 limen" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "eliminate = 赶出门外 → 消除，淘汰" },
     logic: { premise: "某事物不应该存在", feature: "将其彻底去除", result: "不再存在或被淘汰", essence: "彻底排除" },
@@ -234,6 +255,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "afflict",
+    partOfSpeech: "v",
     phonetic: { uk: "/əˈflɪkt/", us: "/əˈflɪkt/" },
     root: { components: [{ part: "af-", meaning: "朝向", origin: "" }, { part: "flict", meaning: "打击", origin: "拉丁语 fligere" }], explanation: "afflict = 打击 → 使痛苦，折磨" },
     logic: { premise: "某人受到疾病或困难的侵袭", feature: "持续造成痛苦", result: "长期承受折磨", essence: "长期折磨性的痛苦" },
@@ -245,6 +267,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "integer",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɪntɪdʒə(r)/", us: "/ˈɪntɪdʒər/" },
     root: { components: [{ part: "integr", meaning: "完整，整体", origin: "拉丁语 integer" }], explanation: "integer = 完整的数 → 整数" },
     logic: { premise: "数学中需要区分数的类型", feature: "没有小数或分数部分", result: "完整的数", essence: "不可分割的完整数" },
@@ -256,6 +279,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "anecdote",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈænɪkdəʊt/", us: "/ˈænɪkdoʊt/" },
     root: { components: [{ part: "an-", meaning: "不", origin: "" }, { part: "ecdote", meaning: "出版，给出", origin: "希腊语 ekdosis" }], explanation: "anecdote = 未出版的 → 轶事，趣闻" },
     logic: { premise: "有一段有趣的小故事", feature: "简短、有趣、非正式", result: "用来阐明观点或娱乐", essence: "简短有趣的个人故事" },
@@ -267,6 +291,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "rational",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈræʃənl/", us: "/ˈræʃənl/" },
     root: { components: [{ part: "ration", meaning: "理性，理由", origin: "拉丁语 ratio" }, { part: "-al", meaning: "形容词后缀", origin: "" }], explanation: "rational = 理性的，合理的" },
     logic: { premise: "面对问题或决策", feature: "基于逻辑和推理而非情感", result: "做出合理的判断", essence: "基于逻辑的理性思维" },
@@ -278,6 +303,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "nowhere",
+    partOfSpeech: "adv",
     phonetic: { uk: "/ˈnəʊweə(r)/", us: "/ˈnoʊwer/" },
     root: { components: [{ part: "no", meaning: "不，无", origin: "" }, { part: "where", meaning: "哪里", origin: "" }], explanation: "nowhere = 任何地方都不 → 无处，到处都没有" },
     logic: { premise: "寻找某物", feature: "在任何地方都找不到", result: "无迹可寻", essence: "完全不存在的位置" },
@@ -289,6 +315,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "considerable",
+    partOfSpeech: "adj",
     phonetic: { uk: "/kənˈsɪdərəbl/", us: "/kənˈsɪdərəbl/" },
     root: { components: [{ part: "consider", meaning: "考虑", origin: "拉丁语 considerare" }, { part: "-able", meaning: "可...的", origin: "" }], explanation: "considerable = 值得考虑的 → 相当大的，可观的" },
     logic: { premise: "某事物的数量或程度", feature: "大到值得关注", result: "不可忽视的重要量", essence: "大到值得注意的程度" },
@@ -300,6 +327,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "supreme",
+    partOfSpeech: "adj",
     phonetic: { uk: "/suːˈpriːm/", us: "/suːˈpriːm/" },
     root: { components: [{ part: "supr-", meaning: "在...之上", origin: "拉丁语 super" }], explanation: "supreme = 在一切之上的 → 最高的，至上的" },
     logic: { premise: "存在等级或排名", feature: "位于最高层，无出其右", result: "拥有最高权力或地位", essence: "至高无上的地位" },
@@ -311,6 +339,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "unforeseen",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˌʌnfɔːˈsiːn/", us: "/ˌʌnfɔːrˈsiːn/" },
     root: { components: [{ part: "un-", meaning: "不，未", origin: "" }, { part: "fore", meaning: "提前", origin: "" }, { part: "seen", meaning: "看见", origin: "" }], explanation: "unforeseen = 未提前看到的 → 未预见到的" },
     logic: { premise: "事情发生前", feature: "没有预料到会发生", result: "突然出现，令人意外", essence: "无法提前预知的" },
@@ -322,6 +351,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "coin",
+    partOfSpeech: "v",
     phonetic: { uk: "/kɔɪn/", us: "/kɔɪn/" },
     root: { components: [{ part: "coin", meaning: "硬币，创造", origin: "拉丁语 cuneus（楔形）" }], explanation: "coin = 硬币 → 创造新词，铸币" },
     logic: { premise: "需要新的货币或表达", feature: "铸造或创造新的", result: "产生新的硬币或词语", essence: "创造新事物的行为" },
@@ -333,6 +363,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "fog",
+    partOfSpeech: "n",
     phonetic: { uk: "/fɒɡ/", us: "/fɔːɡ/" },
     root: { components: [{ part: "fog", meaning: "雾", origin: "斯堪的纳维亚语" }], explanation: "fog = 雾，迷惑" },
     logic: { premise: "空气中水汽凝结", feature: "能见度极低", result: "视线模糊，难以辨认", essence: "模糊不清的状态" },
@@ -344,6 +375,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "devastate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈdevəsteɪt/", us: "/ˈdevəsteɪt/" },
     root: { components: [{ part: "de-", meaning: "完全", origin: "" }, { part: "vast", meaning: "空旷，荒废", origin: "拉丁语 vastus" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "devastate = 完全荒废 → 毁灭，摧毁" },
     logic: { premise: "灾害或攻击降临", feature: "造成极大破坏", result: "满目疮痍，完全摧毁", essence: "彻底毁灭性的破坏" },
@@ -355,6 +387,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "beholder",
+    partOfSpeech: "n",
     phonetic: { uk: "/bɪˈhəʊldə(r)/", us: "/bɪˈhoʊldər/" },
     root: { components: [{ part: "be-", meaning: "强调", origin: "" }, { part: "hold", meaning: "持有，看", origin: "古英语 healdan" }, { part: "-er", meaning: "人", origin: "" }], explanation: "beholder = 观看者，旁观者" },
     logic: { premise: "有人在观看某事物", feature: "从自己的角度去看待", result: "形成个人主观感受", essence: "观看者的主观视角" },
@@ -366,6 +399,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "smirk",
+    partOfSpeech: "v",
     phonetic: { uk: "/smɜːk/", us: "/smɜːrk/" },
     root: { components: [{ part: "smirk", meaning: "得意的笑", origin: "古英语 smearcian" }], explanation: "smirk = 得意的笑，假笑，傻笑" },
     logic: { premise: "某人自以为得意或聪明", feature: "嘴角上扬露出得意或讽刺的笑", result: "显得不真诚或令人反感", essence: "带有优越感的不真诚笑容" },
@@ -377,6 +411,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "fortify",
+    partOfSpeech: "v",
     phonetic: { uk: "/ˈfɔːtɪfaɪ/", us: "/ˈfɔːrtɪfaɪ/" },
     root: { components: [{ part: "fort", meaning: "坚固，堡垒", origin: "拉丁语 fortis" }, { part: "-ify", meaning: "使成为", origin: "" }], explanation: "fortify = 使坚固 → 加强，设防" },
     logic: { premise: "需要增强防御或力量", feature: "加固使之更坚固", result: "抵御攻击或增强能力", essence: "使更加坚固有力" },
@@ -388,6 +423,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "progressively",
+    partOfSpeech: "adv",
     phonetic: { uk: "/prəˈɡresɪvli/", us: "/prəˈɡresɪvli/" },
     root: { components: [{ part: "pro-", meaning: "向前", origin: "" }, { part: "gress", meaning: "走", origin: "拉丁语 gradi" }, { part: "-ive", meaning: "形容词后缀", origin: "" }, { part: "-ly", meaning: "副词后缀", origin: "" }], explanation: "progressively = 逐步地，渐进地" },
     logic: { premise: "事物在发展变化", feature: "逐步推进，持续进展", result: "稳步向前发展", essence: "逐步渐进的方式" },
@@ -399,6 +435,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "degradation",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌdeɡrəˈdeɪʃn/", us: "/ˌdeɡrəˈdeɪʃn/" },
     root: { components: [{ part: "de-", meaning: "向下", origin: "" }, { part: "grad", meaning: "等级，步", origin: "拉丁语 gradus" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "degradation = 降级 → 退化，恶化，降解" },
     logic: { premise: "事物原本质量较高", feature: "逐渐变差或降级", result: "品质下降或功能退化", essence: "从好到差的退化过程" },
@@ -410,6 +447,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "endeavor",
+    partOfSpeech: "n",
     phonetic: { uk: "/ɪnˈdevə(r)/", us: "/ɪnˈdevər/" },
     root: { components: [{ part: "en-", meaning: "使", origin: "" }, { part: "deavor", meaning: "责任，义务", origin: "古法语 deveir" }], explanation: "endeavor = 尽责任 → 努力，尝试，事业" },
     logic: { premise: "有目标需要实现", feature: "付出真诚的努力去尝试", result: "尽全力去做", essence: "认真努力地去尝试" },
@@ -421,6 +459,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "slave",
+    partOfSpeech: "n",
     phonetic: { uk: "/sleɪv/", us: "/sleɪv/" },
     root: { components: [{ part: "slave", meaning: "奴隶", origin: "斯拉夫语（历史上斯拉夫人常被奴役）" }], explanation: "slave = 奴隶，苦工，拼命工作" },
     logic: { premise: "某人被他人控制", feature: "没有自由，被迫劳动", result: "完全从属于他人", essence: "失去自由的从属状态" },
@@ -432,6 +471,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "delineate",
+    partOfSpeech: "v",
     phonetic: { uk: "/dɪˈlɪnieɪt/", us: "/dɪˈlɪnieɪt/" },
     root: { components: [{ part: "de-", meaning: "完全，出", origin: "" }, { part: "line", meaning: "线", origin: "拉丁语 linea" }, { part: "-ate", meaning: "动词后缀", origin: "" }], explanation: "delineate = 画出线来 → 描绘，划定界限" },
     logic: { premise: "需要明确边界或细节", feature: "用线条勾画出来", result: "清晰划定范围", essence: "精确描绘或划界" },
@@ -443,6 +483,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "adjoin",
+    partOfSpeech: "v",
     phonetic: { uk: "/əˈdʒɔɪn/", us: "/əˈdʒɔɪn/" },
     root: { components: [{ part: "ad-", meaning: "朝向", origin: "" }, { part: "join", meaning: "连接", origin: "拉丁语 jungere" }], explanation: "adjoin = 朝向连接 → 毗邻，邻接" },
     logic: { premise: "两个区域或空间", feature: "彼此紧密相连", result: "共享边界或相邻", essence: "紧密相邻的关系" },
@@ -454,6 +495,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "allegiance",
+    partOfSpeech: "n",
     phonetic: { uk: "/əˈliːdʒəns/", us: "/əˈliːdʒəns/" },
     root: { components: [{ part: "all-", meaning: "朝向", origin: "" }, { part: "leg", meaning: "法律，选择", origin: "拉丁语 ligare" }], explanation: "allegiance = 法律上的绑定 → 忠诚，效忠" },
     logic: { premise: "对国家、组织或领袖", feature: "法律或道德上的忠诚义务", result: "坚定支持和服从", essence: "法律或道义上的忠诚" },
@@ -465,6 +507,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "interplay",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɪntəpleɪ/", us: "/ˈɪntərpleɪ/" },
     root: { components: [{ part: "inter-", meaning: "相互", origin: "" }, { part: "play", meaning: "作用，影响", origin: "" }], explanation: "interplay = 相互作用 → 互动，相互影响" },
     logic: { premise: "两个或多个因素同时存在", feature: "彼此影响和制约", result: "产生复杂的综合效果", essence: "多因素间的相互作用" },
@@ -476,6 +519,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "abide",
+    partOfSpeech: "v",
     phonetic: { uk: "/əˈbaɪd/", us: "/əˈbaɪd/" },
     root: { components: [{ part: "a-", meaning: "在", origin: "" }, { part: "bide", meaning: "等待，停留", origin: "古英语 bidan" }], explanation: "abide = 停留 → 遵守，忍受" },
     logic: { premise: "存在规则或难以接受的事", feature: "选择遵守或忍耐", result: "服从规则或承受痛苦", essence: "遵守或忍受" },
@@ -487,6 +531,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "respective",
+    partOfSpeech: "adj",
     phonetic: { uk: "/rɪˈspektɪv/", us: "/rɪˈspektɪv/" },
     root: { components: [{ part: "respect", meaning: "方面", origin: "拉丁语 respectus" }, { part: "-ive", meaning: "形容词后缀", origin: "" }], explanation: "respective = 各自的，分别的" },
     logic: { premise: "多个主体各有自己的", feature: "各自独立的，分别的", result: "不混在一起，各自对应", essence: "各自独立归属" },
@@ -498,6 +543,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "graze",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɡreɪz/", us: "/ɡreɪz/" },
     root: { components: [{ part: "graze", meaning: "吃草，擦伤", origin: "古英语 grasian" }], explanation: "graze = 吃草，擦伤，放牧" },
     logic: { premise: "动物在草地上吃草", feature: "慢慢啃食草皮", result: "草地被啃食或动物得到食物", essence: "啃食草地的行为" },
@@ -509,6 +555,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "unwilling",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ʌnˈwɪlɪŋ/", us: "/ʌnˈwɪlɪŋ/" },
     root: { components: [{ part: "un-", meaning: "不", origin: "" }, { part: "willing", meaning: "愿意的", origin: "" }], explanation: "unwilling = 不愿意的，不情愿的" },
     logic: { premise: "被要求做某事", feature: "内心不愿意或抗拒", result: "勉强配合或拒绝", essence: "缺乏自愿意愿" },
@@ -520,6 +567,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "neutral",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈnjuːtrəl/", us: "/ˈnuːtrəl/" },
     root: { components: [{ part: "neutr-", meaning: "中性的，不偏不倚", origin: "拉丁语 neuter（两者都不）" }], explanation: "neutral = 中立的，中性的" },
     logic: { premise: "存在对立的双方", feature: "不偏向任何一方", result: "保持中间立场", essence: "不偏不倚的中间状态" },
@@ -531,6 +579,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "intend",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈtend/", us: "/ɪnˈtend/" },
     root: { components: [{ part: "in-", meaning: "朝向", origin: "" }, { part: "tend", meaning: "伸展，倾向", origin: "拉丁语 tendere" }], explanation: "intend = 心意指向 → 打算，意欲" },
     logic: { premise: "心中有某个目的", feature: "有意识地朝该方向行动", result: "表现出明确的意图", essence: "有目的地计划或打算" },
@@ -542,6 +591,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "passive",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈpæsɪv/", us: "/ˈpæsɪv/" },
     root: { components: [{ part: "pass", meaning: "承受，经历", origin: "拉丁语 pati" }, { part: "-ive", meaning: "形容词后缀", origin: "" }], explanation: "passive = 被动的，消极的" },
     logic: { premise: "面对需要行动的情况", feature: "不主动，不采取行动", result: "任由事情发展", essence: "不主动作为的状态" },
@@ -553,6 +603,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "throughout",
+    partOfSpeech: "prep",
     phonetic: { uk: "/θruːˈaʊt/", us: "/θruːˈaʊt/" },
     root: { components: [{ part: "through", meaning: "穿过", origin: "" }, { part: "out", meaning: "完全", origin: "" }], explanation: "throughout = 穿过全部 → 遍及，自始至终" },
     logic: { premise: "某个时间或空间的范围", feature: "覆盖从头到尾或全部区域", result: "无处不在，全程参与", essence: "覆盖整个范围" },
@@ -564,6 +615,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "litter",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈlɪtə(r)/", us: "/ˈlɪtər/" },
     root: { components: [{ part: "litter", meaning: "担架，散落物", origin: "拉丁语 lectus" }], explanation: "litter = 垃圾，乱扔，一窝（幼崽）" },
     logic: { premise: "物品被随意丢弃", feature: "杂乱无章地散落", result: "造成环境污染或混乱", essence: "随意散落的废弃物" },
@@ -575,6 +627,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "pathology",
+    partOfSpeech: "n",
     phonetic: { uk: "/pəˈθɒlədʒi/", us: "/pəˈθɑːlədʒi/" },
     root: { components: [{ part: "patho-", meaning: "疾病，痛苦", origin: "希腊语 pathos" }, { part: "-logy", meaning: "学科，研究", origin: "希腊语 logos" }], explanation: "pathology = 研究疾病的学科 → 病理学" },
     logic: { premise: "疾病发生", feature: "通过科学方法研究其本质和规律", result: "理解病因和病理机制", essence: "对疾病本质的科学研究" },
@@ -586,6 +639,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "imagery",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈɪmɪdʒəri/", us: "/ˈɪmɪdʒəri/" },
     root: { components: [{ part: "image", meaning: "图像，意象", origin: "拉丁语 imago" }, { part: "-ry", meaning: "名词后缀，集合", origin: "" }], explanation: "imagery = 意象集合 → 意象，形象化描述" },
     logic: { premise: "文学或艺术中需要表达", feature: "通过生动的视觉化语言或画面", result: "在读者/观众脑海中形成画面", essence: "生动的视觉化表达" },
@@ -597,6 +651,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "elaborate",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪˈlæbərət/", us: "/ɪˈlæbərət/" },
     root: { components: [{ part: "e-", meaning: "出", origin: "" }, { part: "labor", meaning: "劳动，工作", origin: "拉丁语 labor" }, { part: "-ate", meaning: "后缀", origin: "" }], explanation: "elaborate = 付出劳动 → 精心制作的，详细阐述" },
     logic: { premise: "某事物需要仔细处理", feature: "投入大量精力和细节", result: "制作精致或阐述详细", essence: "精心和详细" },
@@ -608,6 +663,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "frigid",
+    partOfSpeech: "adj",
     phonetic: { uk: "/ˈfrɪdʒɪd/", us: "/ˈfrɪdʒɪd/" },
     root: { components: [{ part: "frig-", meaning: "寒冷", origin: "拉丁语 frigidus" }], explanation: "frigid = 极冷的，寒冷的" },
     logic: { premise: "温度极低", feature: "严寒刺骨", result: "不适合居住或活动", essence: "极度寒冷的状态" },
@@ -619,6 +675,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "surge",
+    partOfSpeech: "n",
     phonetic: { uk: "/sɜːdʒ/", us: "/sɜːrdʒ/" },
     root: { components: [{ part: "surge", meaning: "汹涌，激增", origin: "法语 sourgeon" }], explanation: "surge = 汹涌，激增，猛增" },
     logic: { premise: "某事物数量或力量突然增加", feature: "如潮水般汹涌而来", result: "急剧上升，势不可挡", essence: "突然的大幅增长" },
@@ -630,6 +687,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "richness",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˈrɪtʃnəs/", us: "/ˈrɪtʃnəs/" },
     root: { components: [{ part: "rich", meaning: "丰富的", origin: "" }, { part: "-ness", meaning: "名词后缀", origin: "" }], explanation: "richness = 丰富，富裕，浓郁" },
     logic: { premise: "某事物具有大量有价值的内容", feature: "多样且充实", result: "给人充实和深刻的感受", essence: "丰富充实的品质" },
@@ -641,6 +699,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "enrol",
+    partOfSpeech: "v",
     phonetic: { uk: "/ɪnˈrəʊl/", us: "/ɪnˈroʊl/" },
     root: { components: [{ part: "en-", meaning: "使进入", origin: "" }, { part: "rol", meaning: "名单，卷", origin: "拉丁语 rotulus" }], explanation: "enrol = 登记入册 → 注册，入学" },
     logic: { premise: "有人想参加课程或组织", feature: "正式登记加入名单", result: "成为注册成员", essence: "正式登记加入" },
@@ -652,6 +711,7 @@ export const batch1b: WordAnalysis[] = [
   },
   {
     word: "implication",
+    partOfSpeech: "n",
     phonetic: { uk: "/ˌɪmplɪˈkeɪʃn/", us: "/ˌɪmplɪˈkeɪʃn/" },
     root: { components: [{ part: "im-", meaning: "在内", origin: "" }, { part: "plic", meaning: "折叠", origin: "拉丁语 plicare" }, { part: "-ation", meaning: "名词后缀", origin: "" }], explanation: "implication = 内含的 → 含义，暗示，影响" },
     logic: { premise: "某事物表面之下有隐藏含义", feature: "不是直接说出而是暗示", result: "需要推断才能理解", essence: "含蓄的暗示或影响" },

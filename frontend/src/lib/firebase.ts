@@ -3,44 +3,34 @@ import { getAuth, Auth } from "firebase/auth";
 import { getFirestore, Firestore } from "firebase/firestore";
 
 // ============================================================
-// Firebase 配置
-// Wayne: 请将下面的占位符替换为你自己的 Firebase 项目配置
-// 获取方式：
-//   1. 打开 https://console.firebase.google.com
-//   2. 选择你的项目 → 项目设置 → 你的应用
-//   3. 复制 SDK 设置和配置中的 firebaseConfig 对象
+// Firebase 配置 - 使用用户的真实项目配置
 // ============================================================
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "",
+  apiKey: "AIzaSyAYiVHTdtgcxal66LIOYhUEZgaPlGodrGk",
+  authDomain: "vocablearn-6b4ad.firebaseapp.com",
+  projectId: "vocablearn-6b4ad",
+  storageBucket: "vocablearn-6b4ad.firebasestorage.app",
+  messagingSenderId: "350798372254",
+  appId: "1:350798372254:web:dd3799943c119010394a8f",
 };
 
-// 检查 Firebase 是否已配置（非空占位符）
-export const firebaseConfigured =
-  !!firebaseConfig.apiKey &&
-  !!firebaseConfig.projectId &&
-  !firebaseConfig.apiKey.includes("Demo") &&
-  !firebaseConfig.apiKey.includes("demo");
+// Firebase 已配置
+export const firebaseConfigured = true;
 
 let app: FirebaseApp | null = null;
 let authInstance: Auth | null = null;
 let dbInstance: Firestore | null = null;
 
-if (firebaseConfigured) {
-  try {
-    app = initializeApp(firebaseConfig);
-    authInstance = getAuth(app);
-    dbInstance = getFirestore(app);
-  } catch (e) {
-    console.warn("Firebase initialization failed:", e);
-  }
+try {
+  app = initializeApp(firebaseConfig);
+  authInstance = getAuth(app);
+  dbInstance = getFirestore(app);
+  console.log("✅ Firebase 已成功连接到项目: vocablearn-6b4ad");
+} catch (e) {
+  console.error("❌ Firebase 初始化失败:", e);
 }
 
-// 导出（可能为 null，各 hook 需做 null 检查）
+// 导出
 export const auth = authInstance;
 export const db = dbInstance;
 

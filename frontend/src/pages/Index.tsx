@@ -1,10 +1,13 @@
 import { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { Search, BookOpen, Sparkles, Heart, MessageSquare } from "lucide-react";
+import { Search, BookOpen, Sparkles, Heart, MessageSquare, User, LogOut, LogIn, List, Zap } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
 import { allWordsData } from "@/data/allWords";
-import { useFavorites } from "@/hooks/use-favorites";
+import { useCloudFavorites } from "@/hooks/use-cloud-favorites";
+import { useAuth } from "@/contexts/AuthContext";
+import { AuthDialog } from "@/components/AuthDialog";
 
 const POS_LABELS: Record<string, string> = {
   n: "名词",
@@ -20,7 +23,9 @@ const POS_FILTERS = ["all", "n", "v", "adj", "adv"];
 export default function Index() {
   const [searchTerm, setSearchTerm] = useState("");
   const [posFilter, setPosFilter] = useState("all");
-  const { favoriteCount, isFavorite, toggleFavorite } = useFavorites();
+  const [authOpen, setAuthOpen] = useState(false);
+  const { favoriteCount, isFavorite, toggleFavorite } = useCloudFavorites();
+  const { user, logOut } = useAuth();
 
   const filteredWords = useMemo(() => {
     let words = allWordsData;
@@ -43,8 +48,34 @@ export default function Index() {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Top Nav */}
+      <nav className="sticky top-0 z-20 border-b border-border bg-background/95 backdrop-blur-sm">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3">
+          <span className="text-lg font-semibold text-foreground">VocabLearn</span>
+          <div className="flex items-center gap-2">
+            {user ? (
+              <>
+                <span className="hidden text-sm text-muted-foreground sm:block">
+                  {user.displayName || user.email}
+                </span>
+                <Button variant="ghost" size="sm" asChild>
+                  <Link to="/wordlists"><List className="mr-1 h-4 w-4" />词单</Link>
+                </Button>
+                <Button variant="ghost" size="sm" onClick={logOut}>
+                  <LogOut className="h-4 w-4" />
+                </Button>
+              </>
+            ) : (
+              <Button variant="outline" size="sm" onClick={() => setAuthOpen(true)}>
+                <LogIn className="mr-1 h-4 w-4" />登录
+              </Button>
+            )}
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative overflow-hidden px-4 py-16 sm:px-6 lg:px-8">
+      <section className="relative overflow-hidden px-4 py-12 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-4xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -96,14 +127,14 @@ export default function Index() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-6 flex justify-center gap-3"
+            className="mt-6 flex flex-wrap justify-center gap-3"
           >
             <Link
               to="/favorites"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm text-foreground transition-colors hover:bg-secondary"
             >
               <Heart className="h-4 w-4 text-rose-500" />
-              我的词单
+              我的收藏
               {favoriteCount > 0 && (
                 <span className="rounded-full bg-rose-100 px-1.5 py-0.5 text-xs font-medium text-rose-600">
                   {favoriteCount}
@@ -111,18 +142,41 @@ export default function Index() {
               )}
             </Link>
             <Link
+              to="/wordlists"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm text-foreground transition-colors hover:bg-secondary"
+            >
+              <List className="h-4 w-4 text-primary" />
+              自定义词单
+            </Link>
+            <Link
+              to="/flashcards"
+              className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm text-foreground transition-colors hover:bg-secondary"
+            >
+              <Zap className="h-4 w-4 text-yellow-500" />
+              闪卡复习
+            </Link>
+            <Link
               to="/feedback"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-4 py-2 text-sm text-foreground transition-colors hover:bg-secondary"
             >
               <MessageSquare className="h-4 w-4 text-primary" />
-              意见反馈
+              留言板
             </Link>
+            {!user && (
+              <button
+                onClick={() => setAuthOpen(true)}
+                className="inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-4 py-2 text-sm text-primary transition-colors hover:bg-primary/10"
+              >
+                <User className="h-4 w-4" />
+                登录同步数据
+              </button>
+            )}
           </motion.div>
         </div>
       </section>
 
       {/* Search & Filter Section */}
-      <section className="sticky top-0 z-10 border-b border-border bg-background/95 px-4 py-4 backdrop-blur-sm">
+      <section className="sticky top-[57px] z-10 border-b border-border bg-background/95 px-4 py-4 backdrop-blur-sm">
         <div className="mx-auto max-w-3xl space-y-3">
           {/* Search */}
           <div className="relative">
@@ -167,7 +221,7 @@ export default function Index() {
                 key={word.word}
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.01 }}
+                transition={{ duration: 0.3, delay: Math.min(index * 0.01, 0.3) }}
                 className="group relative"
               >
                 <Link to={`/word/${word.word}`}>
@@ -237,6 +291,8 @@ export default function Index() {
           )}
         </div>
       </section>
+
+      <AuthDialog open={authOpen} onOpenChange={setAuthOpen} />
     </div>
   );
 }

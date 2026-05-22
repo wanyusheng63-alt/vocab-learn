@@ -1,6 +1,12 @@
 import { useMemo } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
-import { useFavorites } from "@/hooks/use-favorites";
+import { useCloudFavorites } from "@/hooks/use-cloud-favorites";
+import { useWordLists } from "@/hooks/use-word-lists";
+import { AuthDialog } from "@/components/AuthDialog";
+import { useState } from "react";
+import { Select, SelectContent, SelectItem, SelectTrigger } from "@/components/ui/select";
+import { List } from "lucide-react";
+import { toast } from "sonner";
 import { motion } from "framer-motion";
 import {
   ArrowLeft,
@@ -22,7 +28,19 @@ import { allWordsData } from "@/data/allWords";
 export default function WordDetail() {
   const { word } = useParams<{ word: string }>();
   const navigate = useNavigate();
-  const { isFavorite, toggleFavorite } = useFavorites();
+  const { isFavorite, toggleFavorite } = useCloudFavorites();
+  const { lists, addWordToList, isInList } = useWordLists();
+  const [authOpen, setAuthOpen] = useState(false);
+  const [addingToList, setAddingToList] = useState(false);
+
+  const handleAddToList = async (listId: string) => {
+    if (!wordData) return;
+    setAddingToList(true);
+    await addWordToList(listId, wordData.word);
+    const list = lists.find((l) => l.id === listId);
+    toast.success(`已添加到「${list?.name || "词单"}」`);
+    setAddingToList(false);
+  };
 
   const wordData = useMemo(() => {
     return allWordsData.find((w) => w.word.toLowerCase() === word?.toLowerCase());
@@ -80,6 +98,22 @@ export default function WordDetail() {
               />
               {wordData && isFavorite(wordData.word) ? "已收藏" : "收藏"}
             </Button>
+            {lists.length > 0 && wordData && (
+              <Select onValueChange={handleAddToList} disabled={addingToList}>
+                <SelectTrigger className="h-9 w-auto gap-1 px-3 text-sm">
+                  <List className="h-4 w-4" />
+                  <span className="hidden sm:inline">加入词单</span>
+                </SelectTrigger>
+                <SelectContent>
+                  {lists.map((list) => (
+                    <SelectItem key={list.id} value={list.id}>
+                      {list.name}
+                      {isInList(list.id, wordData.word) && " ✓"}
+                    </SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            )}
             {prevWord && (
               <Button
                 variant="outline"
@@ -378,6 +412,7 @@ export default function WordDetail() {
           )}
         </div>
       </footer>
+      <AuthDialog open={authOpen} onOpenChange={setAuthOpen} />
     </div>
   );
 }

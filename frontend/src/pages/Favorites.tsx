@@ -1,14 +1,14 @@
 import { useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowLeft, BookOpen, Heart, Search } from "lucide-react";
+import { ArrowLeft, BookOpen, Heart, Search, Zap } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { allWordsData } from "@/data/allWords";
-import { useFavorites } from "@/hooks/use-favorites";
+import { useCloudFavorites } from "@/hooks/use-cloud-favorites";
 
 export default function Favorites() {
-  const { favorites, toggleFavorite } = useFavorites();
+  const { favorites, toggleFavorite } = useCloudFavorites();
   const [searchTerm, setSearchTerm] = useState("");
 
   const favoriteWords = useMemo(() => {
@@ -35,11 +35,20 @@ export default function Favorites() {
               <ArrowLeft className="h-4 w-4" />
               返回
             </Link>
-            <h1 className="text-lg font-semibold text-foreground">我的词单</h1>
+            <h1 className="text-lg font-semibold text-foreground">我的收藏</h1>
           </div>
-          <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
-            {favorites.size} 个单词
-          </span>
+          <div className="flex items-center gap-2">
+            <span className="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">
+              {favorites.size} 个单词
+            </span>
+            {favorites.size > 0 && (
+              <Button variant="outline" size="sm" asChild>
+                <Link to="/flashcards/favorites">
+                  <Zap className="mr-1 h-3 w-3" />闪卡复习
+                </Link>
+              </Button>
+            )}
+          </div>
         </div>
       </header>
 

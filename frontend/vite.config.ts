@@ -7,6 +7,7 @@ import process from "process"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: '/vocab-learn/',
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
